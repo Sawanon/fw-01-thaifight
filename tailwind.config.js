@@ -9,6 +9,7 @@ module.exports = {
       boxShadow: {
         'button': '0px 4px',
         'button-sm': '0px 2px',
+        'only-shadow': '0 30px 40px',
       },
       fontFamily: {
         'prompt': 'Prompt'
