@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        '1xl': '1281px'
+      },
       colors: {
         'test': "green"
       },
@@ -32,6 +35,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
 }
 
