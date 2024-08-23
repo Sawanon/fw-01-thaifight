@@ -3,11 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: url(/public/jpg/background.jpg);
-  /* background-repeat: no-repeat; */
-  background-position: top center;
+html, body {
+  height: 100%;
 }
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+/* body {
+  background: url(/public/jpg/background.jpg);
+  background-position: top center;
+} */
 
 /* width */
 ::-webkit-scrollbar {

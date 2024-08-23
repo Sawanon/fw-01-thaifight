@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    
+  </div>
+  <script>
+    function getResolution() {
+      const realWidth = window.screen.width * window.devicePixelRatio;
+      const realHeight = window.screen.height * window.devicePixelRatio;
+      console.log(`Your screen resolution is: ${realWidth} x ${realHeight}`);
+    }
+    const reder = () => {
+      getResolution()
+      // เอาจำนวนที่ได้ ตั้ง แล้วหาร ด้วยจำนวน เต็ม และคูณ 100
+      console.log("🚀 ~ reder ~ window.clientHeight:", window.innerHeight)
+      console.log("🚀 ~ reder ~ document.body.clientHeight:", document.body.clientHeight)
+      const scalY = document.body.clientHeight/907
+      const scalX = document.body.clientWidth/window.screen.width
+      console.log("🚀 ~ reder ~ scalX:", scalX)
+      console.log("🚀 ~ reder ~ scalY:", scalY)
+      const mainbody = document.getElementById("mainbody")
+      const maincontent = document.getElementById("maincontent")
+      const heightMainContent = maincontent.clientHeight
+      console.log("🚀 ~ reder ~ heightMainContent:", heightMainContent)
+      const mainScale = heightMainContent/751
+      mainbody.style.scale = scalY
+      
+      console.log(`scalY*width: ${scalY*maincontent.clientWidth}`)
+      console.log(`scalX*width: ${scalX*maincontent.clientWidth}`)
+      mainbody.style.transform = `translateX(${(maincontent.clientWidth/2)-(650)}px)`
+      // 1272
+      // maincontent.style.scale = mainScale
+      // mainbody.style.transform = `scale(${scalY})`
+    }
+    const setup = () => {
+      reder()
+      window.addEventListener("resize", () => {
+        console.log("resize");
+        reder()
+      })
+    }
+    setup()
+  </script>
+</body>
+</html>
