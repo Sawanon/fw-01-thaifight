@@ -4,10 +4,863 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <div>
-    
+<body class="overflow-hidden font-prompt bg-[url(/public/jpg/background.jpg)] bg-cover">
+  <div id="mainbody" class="w-[1280px] h-[832px] relative p-4">
+    <!-- header -->
+    <div class="w-[1248px] h-[121px] flex gap-2 justify-center">
+      <div class="h-[121px] w-max flex">
+        <img src="../public/jpg/logo.jpg" alt="">
+      </div>
+      <!-- center -->
+      <div class="space-y-1">
+        <div class="flex pb-1 gap-4">
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#D2222C] to-[#4B0C0D] shadow-button shadow-[#400203] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              มวยสเต็ป
+            </div>
+          </div>
+          <!-- //button -->
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#04A29E] to-[#0A5369] shadow-button shadow-[#003B3B] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              กิจกรรม
+            </div>
+          </div>
+          <!-- //button -->
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#269BDE] to-[#162C61] shadow-button shadow-[#060770] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              รางวัล
+            </div>
+          </div>
+          <!-- //button -->
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#FEBD17] to-[#D9652B] shadow-button shadow-[#D84D08] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              กติกาการเล่น
+            </div>
+          </div>
+          <!-- //button -->
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#FB8DBB] to-[#CF3F8D] shadow-button shadow-[#CB0A67] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              ผลการชก
+            </div>
+          </div>
+          <!-- //button -->
+          <!-- button -->
+          <div class="w-[118px] h-[81px] flex flex-col justify-center items-center bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#94D5EB] to-[#0A7AB2] shadow-button shadow-[#006892] rounded-md">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7V9C4 9.55 3.55 10 3 10H2V14H3C3.55 14 4 14.45 4 15V17C4 18.65 5.35 20 7 20H10V18H7C6.45 18 6 17.55 6 17V15C6 13.7 5.16 12.58 4 12.17V11.83C5.16 11.42 6 10.3 6 9V7C6 6.45 6.45 6 7 6H10V4H7C5.35 4 4 5.35 4 7Z" fill="white"/>
+              <path d="M21 10C20.45 10 20 9.55 20 9V7C20 5.35 18.65 4 17 4H14V6H17C17.55 6 18 6.45 18 7V9C18 10.3 18.84 11.42 20 11.83V12.17C18.84 12.58 18 13.69 18 15V17C18 17.55 17.55 18 17 18H14V20H17C18.65 20 20 18.65 20 17V15C20 14.45 20.45 14 21 14H22V10H21Z" fill="white"/>
+            </svg>
+            <div class="text-white text-base font-medium mt-1">
+              ประวัติเดิมพัน
+            </div>
+          </div>
+          <!-- //button -->
+        </div>
+        <div class="h-[32px] p-1 bg-[#171E28] rounded-md flex gap-2 ">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="overflow-hidden flex-grow">
+            <div class="text-white text-base animate-marquee">
+              เรียนสมาชิกที่เดิมพันมวยไทย ศึกวันไฟต์ไนท์ (ช่อง 7HD) วันเสาร์ที่ 3 สิงหาคม 2567 ระหว่างคู่ หยู
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-2 items-start">
+        <div class="w-[216px] h-[114px] bg-gradient-to-b from-[#83B214] to-[#4B9824] space-y-[2px] rounded-md p-[6px]">
+          <div class="flex justify-between gap-[10px]">
+            <div class="flex-1">
+              <div class="text-white text-xl">
+                Fotz5
+              </div>
+              <div class="bg-[#171E28] mt-1 rounded p-[4px] min-w-[72px] flex items-center justify-between">
+                <div class="w-6 h-6 rounded-full bg-white"></div>
+                <div class="flex items-center gap-[2px]">
+                  <span class="text-white text-base">3</span>
+                  <div class="cursor-pointer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z" fill="#1F5770"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[60px] h-[60px] bg-white rounded-full flex justify-center items-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="black" fill-opacity="0.54"/>
+              </svg>
+            </div>
+          </div>
+          <div class="bg-[#171E28] min-w-[162px] flex justify-between gap-2 items-center p-[2px] rounded">
+            <div class="w-7 h-[30px] cursor-pointer rounded-sm bg-gradient-to-b hover:bg-gradient-to-b from-[#65FD7F] hover:from-[#53E513] to-[#53E513] hover:to-[#65FD7F] shadow-button-sm mb-[2px] shadow-[#1D9511] flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58001 4 4.01001 7.58 4.01001 12C4.01001 16.42 7.58001 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69001 18 6.00001 15.31 6.00001 12C6.00001 8.69 8.69001 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="black" fill-opacity="0.54"/>
+              </svg>                
+            </div>
+            <div class="text-white flex items-end gap-1">
+              <div class="text-base">
+                1,000.09
+              </div>
+              <div class="text-xs mb-[3px]">THB</div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-[4px]">
+          <div class="w-10 h-[34px] cursor-pointer rounded-lg bg-gradient-to-b hover:bg-gradient-to-t from-[#5BA7F5] to-[#1576E1] shadow-button-sm shadow-[#02339D] flex justify-center items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15C10.35 15 9 13.65 9 12C9 10.35 10.35 9 12 9ZM12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7ZM2 13H4C4.55 13 5 12.55 5 12C5 11.45 4.55 11 4 11H2C1.45 11 1 11.45 1 12C1 12.55 1.45 13 2 13ZM20 13H22C22.55 13 23 12.55 23 12C23 11.45 22.55 11 22 11H20C19.45 11 19 11.45 19 12C19 12.55 19.45 13 20 13ZM11 2V4C11 4.55 11.45 5 12 5C12.55 5 13 4.55 13 4V2C13 1.45 12.55 1 12 1C11.45 1 11 1.45 11 2ZM11 20V22C11 22.55 11.45 23 12 23C12.55 23 13 22.55 13 22V20C13 19.45 12.55 19 12 19C11.45 19 11 19.45 11 20ZM5.99 4.58C5.6 4.19 4.96 4.19 4.58 4.58C4.19 4.97 4.19 5.61 4.58 5.99L5.64 7.05C6.03 7.44 6.67 7.44 7.05 7.05C7.43 6.66 7.44 6.02 7.05 5.64L5.99 4.58ZM18.36 16.95C17.97 16.56 17.33 16.56 16.95 16.95C16.56 17.34 16.56 17.98 16.95 18.36L18.01 19.42C18.4 19.81 19.04 19.81 19.42 19.42C19.81 19.03 19.81 18.39 19.42 18.01L18.36 16.95ZM19.42 5.99C19.81 5.6 19.81 4.96 19.42 4.58C19.03 4.19 18.39 4.19 18.01 4.58L16.95 5.64C16.56 6.03 16.56 6.67 16.95 7.05C17.34 7.43 17.98 7.44 18.36 7.05L19.42 5.99ZM7.05 18.36C7.44 17.97 7.44 17.33 7.05 16.95C6.66 16.56 6.02 16.56 5.64 16.95L4.58 18.01C4.19 18.4 4.19 19.04 4.58 19.42C4.97 19.8 5.61 19.81 5.99 19.42L7.05 18.36Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="w-10 h-[34px] cursor-pointer rounded-lg bg-gradient-to-b hover:bg-gradient-to-t from-[#5BA7F5] to-[#1576E1] shadow-button-sm shadow-[#02339D] flex justify-center items-center">
+            <div class="h-[20px] w-[20px] rounded-full relative overflow-hidden">
+              <img class="h-[20px] absolute" src="../public//png/thailand_flag.svg.png" alt="">
+            </div>
+          </div>
+          <div class="w-10 h-[34px] cursor-pointer rounded-lg bg-gradient-to-b hover:bg-gradient-to-t from-[#5BA7F5] to-[#1576E1] shadow-button-sm shadow-[#02339D] flex justify-center items-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9.00047V15.0005H7L12 20.0005V4.00047L7 9.00047H3ZM16.5 12.0005C16.5 10.2305 15.48 8.71047 14 7.97047V16.0205C15.48 15.2905 16.5 13.7705 16.5 12.0005ZM14 3.23047V5.29047C16.89 6.15047 19 8.83047 19 12.0005C19 15.1705 16.89 17.8505 14 18.7105V20.7705C18.01 19.8605 21 16.2805 21 12.0005C21 7.72047 18.01 4.14047 14 3.23047Z" fill="white"/>
+            </svg>              
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="flex mt-[10px] bg-[#171E28] bg-opacity-60 rounded-lg">
+      <!-- left side -->
+      <div class="p-2 w-[244px]">
+        <!-- back button -->
+        <div class="w-[114px] h-[30px] rounded-md flex gap-2 items-center self-start justify-center shadow-button-sm shadow-[#870402] bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#F85F5A] to-[#DD2622]">
+          <div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.77 3.77L16 2L6 12L16 22L17.77 20.23L9.54 12L17.77 3.77Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="text-nowrap text-white text-sm font-semibold">
+            ย้อนกลับ
+          </div>
+        </div>
+        <!-- first container -->
+        <div class="mt-2 flex flex-col h-[319px] w-[228px]">
+          <div class="w-[228px] h-[44px] bg-gradient-to-b from-[#5D79C1] to-[#2E4D95] rounded-t-lg flex justify-center items-center">
+            <div class="text-white text-nowrap text-base">
+              การเดิมพันของคุณ
+            </div>
+          </div>
+          <div class="h-[275px] text-sm space-y-2 flex-grow flex flex-col flex-1 overflow-auto border-x-2 border-b-2 border-[#2E4D95] bg-[#171E28] rounded-b-lg p-2 scrollbar-thin scrollbar-webkit">
+            <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+              <span class="text-white">Fotz5 ต่อ 5/4</span>
+              <span class="text-[#FF2F2F]">มุมแดง</span>
+              <span class="text-white">100 THB</span>
+              <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            </div>
+            <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+              <span class="text-white">Fotz5 ต่อ 5/4</span>
+              <span class="text-[#FF2F2F]">มุมแดง</span>
+              <span class="text-white">100 THB</span>
+              <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            </div>
+            <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+              <span class="text-white">Fotz5 ต่อ 5/4</span>
+              <span class="text-[#FF2F2F]">มุมแดง</span>
+              <span class="text-white">100 THB</span>
+              <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            </div>
+            <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+              <span class="text-white">Fotz5 ต่อ 5/4</span>
+              <span class="text-[#FF2F2F]">มุมแดง</span>
+              <span class="text-white">100 THB</span>
+              <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            </div>
+            <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+              <span class="text-white">Fotz5 ต่อ 5/4</span>
+              <span class="text-[#FF2F2F]">มุมแดง</span>
+              <span class="text-white">100 THB</span>
+              <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            </div>
+          </div>
+        </div>
+        <!-- second container -->
+        <div class="mt-2 w-[228px] h-[291px] flex flex-col">
+          <div class="w-[228px] h-[44px] bg-gradient-to-b from-[#5D79C1] to-[#2E4D95] rounded-t-lg flex justify-center items-center">
+            <div class="text-white text-nowrap">
+              มวยคู่อื่น
+            </div>
+          </div>
+          <div class="h-[247px] overflow-auto flex-grow border-x-2 border-b-2 border-[#2E4D95] bg-[#171E28] rounded-b-lg space-y-[2px]">
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="bg-[#1B283B] flex items-center justify-between gap-2 p-2">
+              <div class="">
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#FF2F2F] text-nowrap text-xs">
+                    มาลัยทอง นุ้ยสี่มุมเมือง
+                  </span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                      <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+                    </svg>
+                  </div>
+                  <span class="text-[#2D91EF] text-nowrap text-xs">
+                    เพขรเดินดง บาสทุ่งเขาหลวง
+                  </span>
+                </div>
+              </div>
+              <div class="bg-gradient-to-b from-[#65FD7F] to-[#53E513] w-7 h-7 flex justify-center items-center rounded-sm border border-[#1D9511]">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- center content -->
+      <div class="w-[724px] flex flex-col relative">
+        <!-- red blue title -->
+        <div class="flex rounded-lg overflow-hidden h-[76px]">
+          <div class="flex gap-2 bg-gradient-to-r from-[#FF2F2F] from-[30%] to-[#ff2f2f33] p-2 flex-1">
+            <!-- image red side -->
+            <div class="h-[60px] relative rounded overflow-hidden">
+              <img class="h-full" src="../public/jpg/sc.jpg" alt="">
+            </div>
+            <div class="flex-1 text-white">
+              <div class="text-lg font-semibold">
+                แสนชัย
+              </div>
+              <div class="text-sm">
+                พี.เค
+              </div>
+              <div class="text-end text-sm">
+                ต่อ 5/4
+              </div>
+            </div>
+          </div>
+          <!-- VS -->
+          <div class="bg-black w-20 flex justify-center items-center relative">
+            <div class="absolute -top-16 bg-white w-16 h-16 rounded-full shadow-only-shadow shadow-[rgba(255,255,255,0.6)]">
+            </div>
+            <span class="text-white text-3xl">
+              vs
+            </span>
+          </div>
+          <div class="flex gap-2 bg-gradient-to-l from-[#2D91EF] from-[30%] to-[#2d91ef33] p-2 flex-1">
+            <!-- image red side -->
+            <div class="flex-1 text-white">
+              <div class="text-lg font-semibold text-end">
+                บัวขาว
+              </div>
+              <div class="text-end text-sm">
+                บัญชาเมฆ
+              </div>
+              <div class="text-sm">
+                ต่อ 10/10
+              </div>
+            </div>
+            <div class="h-[60px] relative rounded overflow-hidden">
+              <img class="h-full" src="../public/jpg/bk.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- win rate -->
+        <div class="flex h-[34px]">
+          <div class="flex-1 flex items-center gap-2">
+            <div>
+              <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+                <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+              </svg>                
+            </div>
+            <div class="flex-1 flex relative p-1 bg-black rounded-l-3xl">
+              <!-- TODO: this percent for red side -->
+              <div id="progress" class="basis-[55%] bg-gradient-to-b from-[#FD716F] to-[#EB2A2B] h-4 rounded-3xl"></div>
+              <div class="text-white text-sm py-[2px] absolute right-2 top-0">
+                <!-- TODO: this percent for red side -->
+                55%
+              </div>
+            </div>
+          </div>
+          <div class="rounded overflow-hidden border-[0.5px] border-gray-600">
+            <div class="uppercase text-xs text-white bg-[#121212] p-[2px]">
+              win rate
+            </div>
+            <div class="bg-gradient-to-b text-xs from-[#494949] to-[#000] text-white text-center">
+              v
+            </div>
+          </div>
+          <div class="flex-1 flex items-center gap-2">
+            <div class="flex-1 flex justify-end relative p-1 bg-black rounded-r-3xl">
+              <div class="text-white text-sm py-[2px] absolute left-2 top-0">
+                <!-- TODO: this percent for red side -->
+                48%
+              </div>
+              <!-- TODO: this percent for red side -->
+              <div id="progress" class="basis-[48%] bg-gradient-to-b from-[#5DABFE] to-[#1274DF] h-4 rounded-3xl"></div>
+            </div>
+            <div>
+              <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+                <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+              </svg>                
+            </div>
+          </div>
+        </div>
+        <!-- video -->
+        <div class="relative w-[724px] h-[386px] bg-black">
+          <video class="h-[386px] w-[724px]" muted loop preload="auto" src="../public/Screen Recording 2567-08-17 at 22.47.25.mov"></video>
+        </div>
+        <!-- bottom action -->
+        <div class="h-[168px] w-[724px] pt-2 flex">
+          <!-- left side -->
+          <div class="flex flex-col h-[114px]">
+            <!-- red button -->
+            <div class="flex gap-2 h-[110px]">
+              <div class="bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#FD716F] to-[#EB2A2B] shadow-button shadow-[#9B0C0B] w-28 py-4 rounded-lg">
+                <div class="flex items-center justify-center">
+                  <svg width="48" height="48" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#D22127"/>
+                    <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#D22127"/>
+                  </svg>
+                </div>
+                <div class="text-black text-opacity-80 text-center">
+                  แทงมุมแดง
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="text-xs text-[#FF2F2F]">
+                  33%
+                </div>
+                <div class="flex-1 w-2 bg-white bg-opacity-40 flex flex-col justify-end rounded-3xl">
+                  <div class="basis-[33%] bg-gradient-to-b from-[#FD716F] to-[#EB2A2B] rounded-3xl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- center -->
+          <div class="flex-1 h-[168px]">
+            <!-- first row -->
+            <div class="flex items-center justify-start h-[58px]">
+              <!-- left -->
+              <div class="h-[50px] w-[132px] flex flex-col justify-center items-center my-2 py-1 text-white text-xs bg-gradient-to-b from-[#FD716F] to-[#EB2A2B] rounded-l-lg">
+                <div>
+                  ได้ 1,000
+                </div>
+                <div>
+                  เสีย 1,250
+                </div>
+              </div>
+              <!-- center -->
+              <div class="w-[170px] h-[58px] p-1 bg-gradient-to-br from-[#B68B15] via-[#FDECBA] via-[20%] to-[#DEAD39] rounded-md flex">
+                <div class="relative bg-gradient-to-b from-[#991511] to-[#3E6CC2] rounded flex-1 flex flex-col justify-between items-center">
+                  <div class="text-white flex self-stretch p-1 text-[10px]">
+                    <div>
+                      <div>
+                        +8000
+                      </div>
+                      <div>
+                        ได้
+                      </div>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center">
+                      <div>
+                        0%
+                      </div>
+                      <!-- TODO: percent 0% -->
+                      <div class="bg-black bg-opacity-40 h-1 min-w-10 self-stretch flex rounded-md overflow-hidden">
+                        <div class="bg-red-800 basis-[0%]"></div>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div>
+                        -1000
+                      </div>
+                      <div>
+                        เสีย
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-xs absolute -bottom-1 p-1 rounded bg-gradient-to-b from-[#e4a531] via-[#f4cd58] via-[20%] to-[#f1b731]">
+                    แทงเสมอ 1/8
+                  </div>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="h-[50px] w-[132px] py-1 flex flex-col items-center justify-center text-xs text-white bg-gradient-to-b from-[#5DABFE] to-[#1274DF] rounded-r-lg">
+                <div>
+                  ได้ 1,000
+                </div>
+                <div>
+                  เสีย 1,000
+                </div>
+              </div>
+            </div>
+            <!-- second row -->
+            <div class="flex gap-[6px] mt-[7px] h-[53px]">
+              <div class="cursor-pointer space-y-2 text-white border-2 border-[#0F2240] rounded-md bg-gradient-to-b from-[#103562] to-[#0B1B34] w-[64px] h-[53px] flex flex-col justify-center items-center">
+                <div class="text-xs">ขั้นต่ำ</div>
+                <div class="text-xs">10</div>
+              </div>
+              <div class="rounded-md p-2 h-[53px] flex-1 bg-red-200 bg-gradient-to-r from-[#EB2A2B] to-[#1274DF]">
+                <input value="1000" class="outline-none rounded-md h-full w-full text-center bg-[#171E28] text-white text-xl" type="text">
+              </div>
+              <div class="cursor-pointer space-y-2 text-white border-2 border-[#0F2240] rounded-md bg-gradient-to-b from-[#103562] to-[#0B1B34] w-[64px] h-[53px] flex flex-col justify-center items-center">
+                <div class="text-xs">สูงสุด</div>
+                <div class="text-xs">50,000</div>
+              </div>
+            </div>
+            <!-- dialog -->
+            <div class="flex justify-center w-max mx-auto bg-gradient-to-r from-[#000] to-[#00000046] mt-2 rounded-t-xl relative">
+              <div class="bg-[#343435] space-y-1 rounded p-2 absolute -top-[222px] h-[222px]">
+                <div class="border border-amber-500 p-2 rounded-md flex items-center bg-[#2A2A2A]">
+                  <div class="px-4">
+                    <div class="w-4 h-4 rounded bg-[#444343] p-[2px]">
+                      <!-- TODO: when active -->
+                      <div class="bg-amber-400 h-full w-full rounded"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-amber-400">
+                      มือใหม่
+                    </div>
+                    <div class="text-white">
+                      10, 50, 100, 500, 1000
+                    </div>
+                  </div>
+                </div>
+                <div class="border border-amber-500 p-2 rounded-md flex items-center bg-[#2A2A2A]">
+                  <div class="px-4">
+                    <div class="w-4 h-4 rounded bg-[#444343] p-[2px]">
+                      <!-- TODO: when active -->
+                      <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-amber-400">
+                      ผู้เล่นทั่วไป
+                    </div>
+                    <div class="text-white">
+                      100, 300, 500, 1,000, 2,000
+                    </div>
+                  </div>
+                </div>
+                <div class="border border-amber-500 p-2 rounded-md flex items-center bg-[#2A2A2A]">
+                  <div class="px-4">
+                    <div class="w-4 h-4 rounded bg-[#444343] p-[2px]">
+                      <!-- TODO: when active -->
+                      <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-amber-400">
+                      เซียนมวย
+                    </div>
+                    <div class="text-white">
+                      1,000, 2,000, 5,000, 10,000, 20,000
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-3 text-white flex-1 px-4 py-2 h-[42px]">
+                <div class="cursor-pointer flex gap-1 px-3 py-1 bg-[#4C4D52] items-center text-sm rounded">
+                  <div>+</div>
+                  <div>10</div>
+                </div>
+                <div class="cursor-pointer flex gap-1 px-3 py-1 bg-[#4C4D52] items-center text-sm rounded">
+                  <span>+</span>
+                  <span>50</span>
+                </div>
+                <div class="cursor-pointer flex gap-1 px-3 py-1 bg-[#4C4D52] items-center text-sm rounded">
+                  <span>+</span>
+                  <span>100</span>
+                </div>
+                <div class="cursor-pointer flex gap-1 px-3 py-1 bg-[#4C4D52] items-center text-sm rounded">
+                  <span>+</span>
+                  <span>500</span>
+                </div>
+                <div class="cursor-pointer flex gap-1 px-3 py-1 bg-[#4C4D52] items-center text-sm rounded">
+                  <span>+</span>
+                  <span>1k</span>
+                </div>
+              </div>
+              <div class="rounded-tr-xl cursor-pointer bg-gradient-to-br from-gray-600 to-[40%] to-gray-900 flex items-center justify-center p-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.1 9.2214C18.29 9.2214 17.55 7.9414 18.45 6.3714C18.97 5.4614 18.66 4.3014 17.75 3.7814L16.02 2.7914C15.23 2.3214 14.21 2.6014 13.74 3.3914L13.63 3.5814C12.73 5.1514 11.25 5.1514 10.34 3.5814L10.23 3.3914C9.78 2.6014 8.76 2.3214 7.97 2.7914L6.24 3.7814C5.33 4.3014 5.02 5.4714 5.54 6.3814C6.45 7.9414 5.71 9.2214 3.9 9.2214C2.86 9.2214 2 10.0714 2 11.1214V12.8814C2 13.9214 2.85 14.7814 3.9 14.7814C5.71 14.7814 6.45 16.0614 5.54 17.6314C5.02 18.5414 5.33 19.7014 6.24 20.2214L7.97 21.2114C8.76 21.6814 9.78 21.4014 10.25 20.6114L10.36 20.4214C11.26 18.8514 12.74 18.8514 13.65 20.4214L13.76 20.6114C14.23 21.4014 15.25 21.6814 16.04 21.2114L17.77 20.2214C18.68 19.7014 18.99 18.5314 18.47 17.6314C17.56 16.0614 18.3 14.7814 20.11 14.7814C21.15 14.7814 22.01 13.9314 22.01 12.8814V11.1214C22 10.0814 21.15 9.2214 20.1 9.2214ZM12 15.2514C10.21 15.2514 8.75 13.7914 8.75 12.0014C8.75 10.2114 10.21 8.7514 12 8.7514C13.79 8.7514 15.25 10.2114 15.25 12.0014C15.25 13.7914 13.79 15.2514 12 15.2514Z" fill="#fff"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="flex gap-2 h-[114px]">
+            <!-- process bar -->
+            <div class="flex flex-col items-center">
+              <div class="text-xs text-[#2D91EF]">
+                67%
+              </div>
+              <div class="flex-1 w-2 bg-white bg-opacity-40 flex flex-col justify-end rounded-3xl">
+                <div class="basis-[67%] bg-gradient-to-b from-[#5DABFE] to-[#1274DF] rounded-3xl"></div>
+              </div>
+            </div>
+            <div class="bg-gradient-to-b hover:bg-gradient-to-t cursor-pointer from-[#5DABFE] to-[#1274DF] shadow-button shadow-[#0530A9] w-28 h-[110px] py-4 rounded-lg">
+              <div class="flex items-center justify-center">
+                <svg width="48" height="48" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2468CD"/>
+                  <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2468CD"/>
+                </svg>
+              </div>
+              <div class="text-black text-opacity-80 text-center">
+                แทงมุมน้ำเงิน
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="flex flex-col p-2 w-[280px]">
+        <!-- container -->
+        <div class="flex flex-col flex-1">
+          <!-- header -->
+          <div class="h-[44px] text-white bg-gradient-to-b from-[#5D79C1] to-[#2E4D95] rounded-t-lg flex justify-center items-center">
+            การเดิมพันโดยรวม
+          </div>
+          <!-- body -->
+          <div class="h-[612px] text-sm flex flex-col justify-between overflow-auto border-x-2 border-b-2 border-[#2E4D95] bg-[#171E28] rounded-b-lg p-2">
+            <div class="space-y-2 overflow-auto max-h-[600px] 1xl:max-h-full hide-scrollbar">
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#FF2F2F]">มุมแดง</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+              <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2">
+                <span class="text-white">pk2**358 ต่อ 5/4</span>
+                <span class="text-[#2D91EF]">มุมน้ำเงิน</span>
+                <span class="text-white">60 THB</span>
+              </div>
+            </div>
+            <div class="flex gap-1">
+              <div class="bg-gradient-to-b cursor-pointer from-[#80BFFF] to-[#0CA7FF] flex justify-center items-center w-12 h-12  rounded">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="bg-[#162B3E] cursor-pointer text-nowrap p-2 flex justify-center items-center text-xs rounded text-white">
+                รอบก่อนชก
+              </div>
+              <div class="bg-[#00A2FF] cursor-pointer text-nowrap p-2 flex justify-center items-center text-xs rounded text-white">
+                รอบก่อนชก
+              </div>
+              <div class="bg-gradient-to-b cursor-pointer from-[#80BFFF] to-[#0CA7FF] flex justify-center items-center w-12 h-12  rounded">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden">
+    <!-- <div class="bg-blue-400 absolute inset-[24px] z-0"> -->
+        <!-- <div class="text-3xl">
+          <span>width:</span>
+          <span id="div_width">0</span>
+        </div>
+        <div class="text-3xl">
+          <span>window width:</span>
+          <span id="div_windowwidth">0</span>
+        </div>
+        <div class="text-3xl">
+          <span>different:</span>
+          <span id="div_different">0</span>
+        </div>
+        <div class="text-3xl">
+          <span>window height:</span>
+          <span id="div_windowHeight">0</span>
+        </div> -->
+      <!-- </div> -->
+    <!-- <div id="line" class="bg-yellow-400 top-0 left-0 right-0 absolute"></div> -->
+    <!-- <div id="linever" class="bg-yellow-400 top-0 left-0 absolute"></div> -->
   </div>
   <script>
     function getResolution() {
@@ -16,33 +869,56 @@
       console.log(`Your screen resolution is: ${realWidth} x ${realHeight}`);
     }
     const reder = () => {
-      getResolution()
       // เอาจำนวนที่ได้ ตั้ง แล้วหาร ด้วยจำนวน เต็ม และคูณ 100
-      console.log("🚀 ~ reder ~ window.clientHeight:", window.innerHeight)
-      console.log("🚀 ~ reder ~ document.body.clientHeight:", document.body.clientHeight)
-      const scalY = document.body.clientHeight/907
-      const scalX = document.body.clientWidth/window.screen.width
-      console.log("🚀 ~ reder ~ scalX:", scalX)
-      console.log("🚀 ~ reder ~ scalY:", scalY)
+      // console.log("🚀 ~ reder ~ document.body.clientHeight:", document.body.clientHeight)
+      const defaultWidth = 1280
+      const defaultHeight = 832
+      const scalY = window.innerHeight / defaultHeight
+      const scalX = window.innerWidth / defaultWidth
       const mainbody = document.getElementById("mainbody")
-      const maincontent = document.getElementById("maincontent")
-      const heightMainContent = maincontent.clientHeight
-      console.log("🚀 ~ reder ~ heightMainContent:", heightMainContent)
-      const mainScale = heightMainContent/751
-      mainbody.style.scale = scalY
       
-      console.log(`scalY*width: ${scalY*maincontent.clientWidth}`)
-      console.log(`scalX*width: ${scalX*maincontent.clientWidth}`)
-      mainbody.style.transform = `translateX(${(maincontent.clientWidth/2)-(650)}px)`
-      // 1272
-      // maincontent.style.scale = mainScale
-      // mainbody.style.transform = `scale(${scalY})`
+      const multiple = defaultHeight/defaultWidth
+      
+      const currentHeight = window.innerHeight
+      const currentWidth = window.innerWidth
+      
+      const contentWidth = currentHeight / multiple
+      const contentHeight = currentWidth * multiple
+      const differentWidth = (currentWidth - contentWidth)
+      const differentHeight = (currentHeight - contentHeight)
+      
+      if(differentWidth > 0){
+        mainbody.style.scale = scalY
+        mainbody.style.marginLeft = `${differentWidth/2}px`
+        mainbody.style.marginTop = `0px`
+        mainbody.style.transformOrigin = 'top left'
+      }else{
+        mainbody.style.scale = scalX
+        mainbody.style.marginLeft = `0px`
+        mainbody.style.marginTop = `${differentHeight/2}px`
+        mainbody.style.transformOrigin = 'top left'
+      }
+
+      // document.getElementById("div_width").innerHTML = contentWidth
+      // document.getElementById("div_windowwidth").innerHTML = currentWidth
+      // document.getElementById("div_different").innerHTML = differentWidth
+      // document.getElementById("div_windowHeight").innerHTML = currentHeight
     }
-    const setup = () => {
+    async function fakeasync(time) {
+      const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay));
+      await waitFor(time);
+    }
+
+    const setup = async () => {
+      let timer
       reder()
-      window.addEventListener("resize", () => {
-        console.log("resize");
-        reder()
+      window.addEventListener("resize", async () => {
+        if(timer) clearTimeout(timer)
+        timer = setTimeout(async () => {
+          reder()
+          
+          console.log("resize");
+        }, 1000);
       })
     }
     setup()

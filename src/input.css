@@ -3,18 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-canvas {
-  display: block;
-}
-
 /* body {
   background: url(/public/jpg/background.jpg);
   background-position: top center;
@@ -53,3 +41,26 @@ canvas {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* width */
+/* body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+} */
+
+/* Track */
+/* body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #383838;
+} */
+ 
+/* Handle */
+/* body::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* body::-webkit-scrollbar-thumb:hover {
+  background: #929292;
+} */
