@@ -6,7 +6,7 @@
   <title>PAKYOK</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-prompt">
   <div class="h-[760px] bg-red-200 w-[428px]">
     <!-- header -->
     <div class="bg-red-400 flex gap-1 h-[37px] w-[428px] p-1">
@@ -49,12 +49,125 @@
           </div>
         </div>
       </div>
-      <div class="h-[45px] w-[42px]">
-        <div>
-          WIN
+      <!-- win rate -->
+      <div class="h-[45px] w-[42px] rounded overflow-hidden bg-white flex flex-col border border-gray-700">
+        <div class="bg-black leading-[11px] text-[11px] text-white text-center p-[2px] flex-1 flex flex-col justify-center">
+          <div>
+            WIN
+          </div>
+          <div>
+            RATE
+          </div>
+        </div>
+        <div class="text-[11px] h-[14px] w-[42px] bg-gradient-to-b text-xs from-[#494949] to-[#000] text-white text-center">
+          v
+        </div>
+      </div>
+      <div class="flex-1 flex items-center gap-2">
+        <div class="flex-1 flex justify-end relative p-1 bg-black rounded-r-3xl">
+          <div class="text-white text-sm py-[2px] absolute left-2 top-0">
+            <!-- TODO: this percent for red side -->
+            48%
+          </div>
+          <!-- TODO: this percent for red side -->
+          <div id="progress" class="basis-[48%] bg-gradient-to-b from-[#5DABFE] to-[#1274DF] h-4 rounded-3xl"></div>
         </div>
         <div>
-          RATE
+          <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+            <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+          </svg>                
+        </div>
+      </div>
+    </div>
+    <!-- video -->
+    <div class="w-[428px] h-[212px] bg-black mt-[2px]">
+      <!-- <video class="h-[212px] w-[428px]" muted loop preload="auto" src="../public/Screen Recording 2567-08-17 at 22.47.25.mov"></video> -->
+      <video class="h-[212px] w-[428px]" autoplay muted loop preload="auto" src="../public/Screen Recording 2567-08-29 at 16.34.31.mov"></video>
+    </div>
+    <div class="bg-blue-300 h-[165px] w-[428px] px-[10px] mt-[2px] flex gap-[10px]">
+      <!-- chat -->
+      <div class="h-[165px] w-[319px] bg-black rounded pl-2 pr-[64px] relative">
+        <div class="w-[58px] h-[33px] absolute top-0 right-0 bg-gradient-to-b from-[#284C88] to-[#112849] rounded-bl flex items-center justify-center gap-2">
+          <input class="outline-none" type="checkbox" name="" id="">
+          <div class="text-[13px] text-white">All</div>
+        </div>
+        <div class="space-y-1 h-[165px] hide-scrollbar overflow-auto">
+          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+            <span class="text-white">Fotz5 ต่อ 5/4</span>
+            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-white">100 THB</span>
+            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+          </div>
+          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+            <span class="text-white">Fotz5 ต่อ 5/4</span>
+            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-white">100 THB</span>
+            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+          </div>
+          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+            <span class="text-white">Fotz5 ต่อ 5/4</span>
+            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-white">100 THB</span>
+            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+          </div>
+          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+            <span class="text-white">Fotz5 ต่อ 5/4</span>
+            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-white">100 THB</span>
+            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-red-300 w-[79px] h-[165px]">
+        <div class="h-[36px] w-[79px] text-sm flex justify-center items-center bg-gradient-to-b from-[#82BFFE] to-[#12A8FD] border-2 border-[#0D71AF] rounded-lg">
+          <div>VS</div>
+          <div>คู่อื่น</div>
+        </div>
+        <div class="h-[122px] w-[79px] mt-[7px] rounded flex flex-col">
+          <div class="bg-[#171E27] rounded h-[88px] overflow-y-scroll hide-scrollbar flex-1 pb-[7px] gap-[6px] space-y-[6px]">
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#132D3C] flex justify-center items-center rounded">
+              หมดยก 2
+            </div>
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#132D3C] flex justify-center items-center rounded">
+              หมดยก 2
+            </div>
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#02A2FF] flex justify-center items-center rounded">
+              หมดยก 2
+            </div>
+          </div>
+          <div class="flex gap-[1px] p-[1px]">
+            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b hover:bg-gradient-to-t from-[#82BFFE] to-[#12A8FD] flex justify-center items-center rounded">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b hover:bg-gradient-to-t from-[#82BFFE] to-[#12A8FD] flex justify-center items-center rounded">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- red blue -->
+    <div>
+      <div class="flex gap-2 bg-gradient-to-r from-[#FF2F2F] from-[30%] to-[#ff2f2f33] p-2 flex-1">
+        <!-- image red side -->
+        <div class="h-[60px] relative rounded overflow-hidden">
+          <img class="h-full" src="../public/jpg/sc.jpg" alt="">
+        </div>
+        <div class="flex-1 text-white">
+          <div class="text-lg font-semibold">
+            แสนชัย
+          </div>
+          <div class="text-sm">
+            พี.เค
+          </div>
+          <div class="text-end text-sm">
+            ต่อ 5/4
+          </div>
         </div>
       </div>
     </div>
