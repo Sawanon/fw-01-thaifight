@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  zoom: 100%;
+}
 /* body {
   background: url(/public/jpg/background.jpg);
   background-position: top center;

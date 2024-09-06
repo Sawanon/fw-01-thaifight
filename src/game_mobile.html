@@ -6,143 +6,144 @@
   <title>PAKYOK</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="font-prompt">
-  <div class="h-[760px] bg-red-200 w-[428px]">
+<body class="font-prompt bg-black overflow-hidden">
+  <div id="mainbody" class="h-[760px] w-[428px] relative bg-[url(/public/jpg/background.jpg)] bg-cover">
     <!-- header -->
-    <div class="bg-red-400 flex gap-1 h-[37px] w-[428px] p-1">
-      <div class="bg-black rounded px-2 py-1 w-[134px] h-[29px] text-white text-sm font-semibold">
-        Fotz5
-      </div>
-      <div class="flex justify-between w-[168px] h-[29px] bg-black rounded">
-        <div class="text-white flex items-end gap-[2px] font-semibold py-1 pl-2">
-          <div class="text-sm">30,400.09</div>
-          <div class="text-[10px]">THB</div>
+    <div class="bg-gradient-to-b from-header-start to-header-end">
+      <div class="flex gap-1 h-[37px] w-[428px] p-1">
+        <div class="bg-black rounded px-2 py-1 w-[134px] h-[29px] text-white text-sm font-semibold">
+          Fotz5
         </div>
-        <div class="mr-[2px] my-[1.5px] rounded cursor-pointer flex items-center justify-center w-[26px] h-[24px] bg-gradient-to-b hover:bg-gradient-to-b from-[#65FD7F] hover:from-[#53E513] to-[#53E513] hover:to-[#65FD7F] shadow-button-sm shadow-[#1D9511]">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58001 4 4.01001 7.58 4.01001 12C4.01001 16.42 7.58001 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69001 18 6.00001 15.31 6.00001 12C6.00001 8.69 8.69001 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="black" fill-opacity="0.54"/>
-          </svg>
+        <div class="flex justify-between w-[168px] h-[29px] bg-black rounded">
+          <div class="text-white flex items-end gap-[2px] font-semibold py-1 pl-2">
+            <div class="text-sm">30,400.09</div>
+            <div class="text-[10px]">THB</div>
+          </div>
+          <div class="mr-[2px] my-[1.5px] rounded cursor-pointer flex items-center justify-center w-[26px] h-[24px] bg-gradient-to-b active:bg-gradient-to-t from-refresh-start to-refresh-end shadow-button-sm shadow-refresh-shadown">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58001 4 4.01001 7.58 4.01001 12C4.01001 16.42 7.58001 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69001 18 6.00001 15.31 6.00001 12C6.00001 8.69 8.69001 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="black" fill-opacity="0.54"/>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-between w-[110px] h-[29px] bg-black rounded px-[6px] py-[3px]">
-        <div class="w-[23px] h-[23px] rounded-full bg-amber-300"></div>
-        <div class="flex items-center gap-[6px]">
-          <div class="text-white font-semibold text-sm">3</div>
-          <div class="w-[23px] h-[23px] rounded-full bg-blue-300"></div>
-        </div>
-      </div>
-    </div>
-    <div class="flex h-[45px]">
-      <div class="flex-1 flex items-center gap-2">
-        <div>
-          <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
-            <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
-          </svg>                
-        </div>
-        <div class="flex-1 flex relative p-1 bg-black rounded-l-3xl">
-          <!-- TODO: this percent for red side -->
-          <div id="progress" class="basis-[55%] bg-gradient-to-b from-[#FD716F] to-[#EB2A2B] h-4 rounded-3xl"></div>
-          <div class="text-white text-sm py-[2px] absolute right-2 top-0">
-            <!-- TODO: this percent for red side -->
-            55%
+        <div class="flex justify-between w-[110px] h-[29px] bg-black rounded px-[6px] py-[3px]">
+          <div class="w-[23px] h-[23px] rounded-full bg-amber-300"></div>
+          <div class="flex items-center gap-[6px]">
+            <div class="text-white font-semibold text-sm">3</div>
+            <div class="w-[23px] h-[23px] rounded-full bg-blue-300"></div>
           </div>
         </div>
       </div>
-      <!-- win rate -->
-      <div class="h-[45px] w-[42px] rounded overflow-hidden bg-white flex flex-col border border-gray-700">
-        <div class="bg-black leading-[11px] text-[11px] text-white text-center p-[2px] flex-1 flex flex-col justify-center">
+      <div class="flex h-[45px]">
+        <div class="flex-1 flex items-center gap-2">
           <div>
-            WIN
+            <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#FF2F2F"/>
+              <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#FF2F2F"/>
+            </svg>                
+          </div>
+          <div class="flex-1 flex relative p-1 bg-black rounded-l-3xl">
+            <!-- TODO: this percent for red side -->
+            <div id="progress" class="basis-[55%] bg-gradient-to-b from-red-side-start to-red-side-end h-4 rounded-3xl"></div>
+            <div class="text-white text-sm py-[2px] absolute right-2 top-0">
+              <!-- TODO: this percent for red side -->
+              55%
+            </div>
+          </div>
+        </div>
+        <!-- win rate -->
+        <div class="h-[45px] w-[42px] rounded overflow-hidden bg-white flex flex-col border border-gray-700">
+          <div class="bg-black leading-[11px] text-[11px] text-white text-center p-[2px] flex-1 flex flex-col justify-center">
+            <div>
+              WIN
+            </div>
+            <div>
+              RATE
+            </div>
+          </div>
+          <div class="text-[11px] h-[14px] w-[42px] bg-gradient-to-b text-xs from-vs-start to-vs-end text-white text-center">
+            v
+          </div>
+        </div>
+        <div class="flex-1 flex items-center gap-2">
+          <div class="flex-1 flex justify-end relative p-1 bg-black rounded-r-3xl">
+            <div class="text-white text-sm py-[2px] absolute left-2 top-0">
+              <!-- TODO: this percent for red side -->
+              48%
+            </div>
+            <!-- TODO: this percent for red side -->
+            <div id="progress" class="basis-[48%] bg-gradient-to-b from-blue-side-start to-blue-side-end h-4 rounded-3xl"></div>
           </div>
           <div>
-            RATE
+            <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
+              <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
+            </svg>                
           </div>
-        </div>
-        <div class="text-[11px] h-[14px] w-[42px] bg-gradient-to-b text-xs from-[#494949] to-[#000] text-white text-center">
-          v
-        </div>
-      </div>
-      <div class="flex-1 flex items-center gap-2">
-        <div class="flex-1 flex justify-end relative p-1 bg-black rounded-r-3xl">
-          <div class="text-white text-sm py-[2px] absolute left-2 top-0">
-            <!-- TODO: this percent for red side -->
-            48%
-          </div>
-          <!-- TODO: this percent for red side -->
-          <div id="progress" class="basis-[48%] bg-gradient-to-b from-[#5DABFE] to-[#1274DF] h-4 rounded-3xl"></div>
-        </div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2D91EF"/>
-            <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2D91EF"/>
-          </svg>                
         </div>
       </div>
     </div>
     <!-- video -->
-    <div class="w-[428px] h-[212px] bg-black mt-[2px]">
-      <!-- <video class="h-[212px] w-[428px]" muted loop preload="auto" src="../public/Screen Recording 2567-08-17 at 22.47.25.mov"></video> -->
-      <video class="h-[212px] w-[428px]" autoplay muted loop preload="auto" src="../public/Screen Recording 2567-08-29 at 16.34.31.mov"></video>
+    <div class="w-[428px] h-[212px] bg-black">
+      <video class="h-[212px] w-[428px]" autoplay muted loop preload="auto" src="../public/Screen Recording 2567-08-17 at 22.47.25.mov"></video>
     </div>
-    <div class="bg-blue-300 h-[165px] w-[428px] px-[10px] mt-[2px] flex gap-[10px]">
+    <div class="h-[165px] w-[428px] px-[10px] mt-[2px] flex gap-[10px]">
       <!-- chat -->
-      <div class="h-[165px] w-[319px] bg-black rounded pl-2 pr-[64px] relative">
-        <div class="w-[58px] h-[33px] absolute top-0 right-0 bg-gradient-to-b from-[#284C88] to-[#112849] rounded-bl flex items-center justify-center gap-2">
+      <div class="h-[165px] w-[319px] bg-chat border-2 overflow-hidden border-chat-border rounded pl-2 pr-[64px] relative">
+        <div class="w-[58px] h-[33px] absolute top-0 right-0 bg-gradient-to-b from-all-start to-all-end rounded-bl flex items-center justify-center gap-2">
           <input class="outline-none" type="checkbox" name="" id="">
           <div class="text-[13px] text-white">All</div>
         </div>
         <div class="space-y-1 h-[165px] hide-scrollbar overflow-auto">
-          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+          <div class="bg-message space-x-1 rounded-3xl p-2 text-xs">
             <span class="text-white">Fotz5 ต่อ 5/4</span>
-            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-chat-red-side">มุมแดง</span>
             <span class="text-white">100 THB</span>
-            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            <span class="text-chat-before-fight">(รอบก่อนชก)</span>
           </div>
-          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+          <div class="bg-message space-x-1 rounded-3xl p-2 text-xs">
             <span class="text-white">Fotz5 ต่อ 5/4</span>
-            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-chat-red-side">มุมแดง</span>
             <span class="text-white">100 THB</span>
-            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            <span class="text-chat-before-fight">(รอบก่อนชก)</span>
           </div>
-          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+          <div class="bg-message space-x-1 rounded-3xl p-2 text-xs">
             <span class="text-white">Fotz5 ต่อ 5/4</span>
-            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-chat-red-side">มุมแดง</span>
             <span class="text-white">100 THB</span>
-            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            <span class="text-chat-before-fight">(รอบก่อนชก)</span>
           </div>
-          <div class="bg-[#0C0F14] space-x-1 rounded-3xl p-2 text-xs">
+          <div class="bg-message space-x-1 rounded-3xl p-2 text-xs">
             <span class="text-white">Fotz5 ต่อ 5/4</span>
-            <span class="text-[#FF2F2F]">มุมแดง</span>
+            <span class="text-chat-red-side">มุมแดง</span>
             <span class="text-white">100 THB</span>
-            <span class="text-[#59D841]">(รอบก่อนชก)</span>
+            <span class="text-chat-before-fight">(รอบก่อนชก)</span>
           </div>
         </div>
       </div>
-      <div class="bg-red-300 w-[79px] h-[165px]">
-        <div class="h-[36px] w-[79px] text-sm flex justify-center items-center bg-gradient-to-b from-[#82BFFE] to-[#12A8FD] border-2 border-[#0D71AF] rounded-lg">
+      <div class="w-[79px] h-[165px]">
+        <div class="h-[36px] w-[79px] text-sm flex justify-center items-center bg-gradient-to-b from-btn-action-start to-btn-action-end border-2 border-btn-action-border rounded-lg">
           <div>VS</div>
           <div>คู่อื่น</div>
         </div>
         <div class="h-[122px] w-[79px] mt-[7px] rounded flex flex-col">
-          <div class="bg-[#171E27] rounded h-[88px] overflow-y-scroll hide-scrollbar flex-1 pb-[7px] gap-[6px] space-y-[6px]">
-            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#132D3C] flex justify-center items-center rounded">
+          <div class="bg-chat rounded h-[88px] overflow-y-scroll hide-scrollbar flex-1 pb-[7px] gap-[6px] space-y-[6px]">
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-round flex justify-center items-center rounded">
               หมดยก 2
             </div>
-            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#132D3C] flex justify-center items-center rounded">
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-round flex justify-center items-center rounded">
               หมดยก 2
             </div>
-            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-[#02A2FF] flex justify-center items-center rounded">
+            <div class="mx-auto w-[61px] h-[29px] text-xs text-white bg-round-active flex justify-center items-center rounded">
               หมดยก 2
             </div>
           </div>
           <div class="flex gap-[1px] p-[1px]">
-            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b hover:bg-gradient-to-t from-[#82BFFE] to-[#12A8FD] flex justify-center items-center rounded">
+            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b active:bg-gradient-to-t from-btn-action-start to-btn-action-end flex justify-center items-center rounded">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.9201 15.0499L13.4001 8.52989C12.6301 7.75989 11.3701 7.75989 10.6001 8.52989L4.08008 15.0499" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b hover:bg-gradient-to-t from-[#82BFFE] to-[#12A8FD] flex justify-center items-center rounded">
+            <div class="cursor-pointer w-[38px] h-[31px] bg-gradient-to-b active:bg-gradient-to-t from-btn-action-start to-btn-action-end flex justify-center items-center rounded">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -152,25 +153,254 @@
       </div>
     </div>
     <!-- red blue -->
-    <div>
-      <div class="flex gap-2 bg-gradient-to-r from-[#FF2F2F] from-[30%] to-[#ff2f2f33] p-2 flex-1">
+    <div class="h-[58px] flex mt-1 rounded-md overflow-hidden mx-2">
+      <!-- red side -->
+      <div class="flex gap-2 bg-gradient-to-b from-red-side-start to-red-side-end p-2 flex-1">
         <!-- image red side -->
-        <div class="h-[60px] relative rounded overflow-hidden">
+        <div class="h-[42px] relative rounded overflow-hidden">
           <img class="h-full" src="../public/jpg/sc.jpg" alt="">
         </div>
-        <div class="flex-1 text-white">
-          <div class="text-lg font-semibold">
+        <div class="flex-1 text-white bg-blue-500]">
+          <div class="text-lg font-semibold text-[12px] leading-[12px]">
             แสนชัย
           </div>
-          <div class="text-sm">
+          <div class="text-[11px] leading-[11px]">
             พี.เค
           </div>
-          <div class="text-end text-sm">
+          <div class="text-end text-[12px] leading-[12px] mt-[2px]">
             ต่อ 5/4
           </div>
         </div>
       </div>
+      <!-- vs -->
+      <div class="bg-black w-[46px] flex justify-center items-center relative overflow-hidden">
+        <div class="absolute -top-16 bg-white w-16 h-16 rounded-full shadow-only-shadow shadow-[rgba(255,255,255,0.6)]">
+        </div>
+        <span class="text-white text-xl">
+          vs
+        </span>
+      </div>
+      <!-- blue side -->
+      <div class="flex gap-2 bg-gradient-to-b from-blue-side-start to-blue-side-end p-2 flex-1">
+        <!-- image red side -->
+        <div class="flex-1 text-white">
+          <div class="text-[12px] leading-[12px] font-semibold text-end">
+            บัวขาว
+          </div>
+          <div class="text-end text-[11px] leading-[11px]">
+            บัญชาเมฆ
+          </div>
+          <div class="text-[12px] leading-[12px]">
+            ต่อ 10/10
+          </div>
+        </div>
+        <div class="h-[42px] relative rounded overflow-hidden">
+          <img class="h-full" src="../public/jpg/bk.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- input -->
+    <div class="h-[52px] mx-2 mt-[2px] flex gap-[5px]">
+      <div class="flex flex-col justify-center items-center text-white font-semibold text-xs h-[52px] w-[103px] bg-gradient-to-b from-red-side-start to-red-side-end rounded-md">
+        <div>ได้ 1,000</div>
+        <div>เสีย 3,000</div>
+      </div>
+      <div class="rounded-md p-1 h-[52px] flex-1 bg-red-200 bg-gradient-to-r from-red-side-end to-blue-side-end">
+        <input value="1000" class="outline-none rounded-md h-full w-full text-center bg-chat text-white text-xl" type="text">
+      </div>
+      <div class="flex flex-col justify-center items-center text-white font-semibold text-xs h-[52px] w-[103px] bg-gradient-to-b from-blue-side-start to-blue-side-end rounded-md">
+        <div>ได้ 2,500</div>
+        <div>เสีย 1,000</div>
+      </div>
+    </div>
+    <!-- button red blue -->
+    <div class="flex gap-1 mt-1 px-2 w-[428px] h-[128px]">
+      <!-- red button -->
+      <div class="p-2 flex bg-gradient-to-b select-none active:bg-gradient-to-t cursor-pointer from-red-side-start to-red-side-end shadow-button shadow-red-side-shadow w-[134px] h-[122px] rounded-lg">
+        <div class="flex flex-col items-start">
+          <div class="text-xs text-white">
+            33%
+          </div>
+          <div class="flex-1 w-2 bg-on-red-side flex flex-col justify-end rounded-3xl">
+            <div class="basis-[33%] bg-red-side-process rounded-3xl"></div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex items-center justify-center">
+            <svg width="48" height="48" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#D22127"/>
+              <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#D22127"/>
+            </svg>
+          </div>
+          <div class="mt-2 text-on-red-side font-semibold text-opacity-80 text-center">
+            แทงมุมแดง
+          </div>
+        </div>
+      </div>
+      <div class="w-[136px]">
+        <!-- แทงเสมอ -->
+        <div class="w-[136px] h-[49px] p-[2px] bg-gradient-to-br from-equal-start via-equal-middle via-[20%] to-equal-end rounded-md flex">
+          <div class="relative bg-gradient-to-b from-on-red-side to-on-blue-side rounded flex-1 flex flex-col justify-between items-center">
+            <div class="text-white flex self-stretch p-1 text-[10px]">
+              <div class="text-[8px]">
+                <div>
+                  +8000
+                </div>
+                <div>
+                  ได้
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col items-center">
+                <div>
+                  0%
+                </div>
+                <!-- TODO: percent 0% -->
+                <div class="bg-black bg-opacity-40 h-1 min-w-10 self-stretch flex rounded-md overflow-hidden">
+                  <div class="bg-red-800 basis-[0%]"></div>
+                </div>
+              </div>
+              <div class="text-end text-[8px]">
+                <div>
+                  -1000
+                </div>
+                <div>
+                  เสีย
+                </div>
+              </div>
+            </div>
+            <div class="cursor-pointer text-xs leading-[12px] absolute -bottom-[2px] p-1 h-[20px] rounded bg-gradient-to-b active:bg-gradient-to-t from-btn-equal-start via-btn-equal-middle via-[20%] to-btn-equal-end">
+              แทงเสมอ 1/8
+            </div>
+          </div>
+        </div>
+        <div class="w-[136px] text-white h-[68px] rounded bg-black bg-opacity-80 mt-[2px] grid grid-cols-2 gap-[2px] p-[2px]">
+          <div class="bg-gray-400 bg-opacity-70 h-[31px] w-[65px] rounded flex justify-center items-center">
+            + 10
+          </div>
+          <div class="bg-gray-400 bg-opacity-70 h-[31px] w-[65px] rounded flex justify-center items-center">
+            + 50
+          </div>
+          <div class="bg-gray-400 bg-opacity-70 h-[31px] w-[65px] rounded flex justify-center items-center">
+            + 100
+          </div>
+          <div class="bg-gray-400 bg-opacity-70 h-[31px] w-[65px] rounded flex justify-center items-center">
+            + 500
+          </div>
+        </div>
+      </div>
+      <!-- blue button -->
+      <div class="p-2 flex justify-end select-none bg-gradient-to-b active:bg-gradient-to-t cursor-pointer from-blue-side-start to-blue-side-end shadow-button shadow-blue-side-shadow w-[134px] h-[122px] rounded-lg">
+        <div class="flex flex-col justify-center ">
+          <div class="flex items-center justify-center">
+            <svg width="48" height="48" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1552 6.16772C9.05642 8.07445 7.08506 9.61042 6.23672 10.1401C6.57067 11.0126 7.75833 11.7066 8.31042 11.9445C8.59051 12.0414 8.85802 11.9849 8.95677 11.9445C10.8096 10.8995 11.7576 9.41742 12 8.80698C11.9138 7.48196 10.7342 6.49539 10.1552 6.16772Z" fill="#2468CD"/>
+              <path d="M5.84623 9.83037C7.92532 8.71004 9.39666 6.66147 9.87244 5.77723C9.74317 4.87235 9.50438 3.73945 9.40114 3.28611C9.02411 1.77796 7.89749 1.36502 7.38131 1.34706C7.58599 2.40276 7.86158 2.85521 7.97379 2.94947C7.95225 3.31573 7.70448 3.23673 7.58329 3.15145C7.48455 3.08861 7.23319 2.7017 7.01774 1.65677C6.80229 0.611844 5.69811 0.135162 5.17296 0.0274363C4.17202 -0.120685 1.84157 0.259044 0.527334 2.96293C-0.786905 5.66682 0.66199 7.36617 1.55072 7.87786C2.63874 8.75043 4.86774 9.54311 5.84623 9.83037Z" fill="#2468CD"/>
+            </svg>
+          </div>
+          <div class="mt-2 text-on-blue-side font-semibold text-opacity-80 text-center">
+            แทงมุมน้ำเงิน
+          </div>
+        </div>
+        <div class="flex flex-col items-end">
+          <div class="text-xs text-white">
+            33%
+          </div>
+          <div class="flex-1 w-2 bg-on-blue-side flex flex-col justify-end rounded-3xl">
+            <div class="basis-[33%] bg-blue-side-process rounded-3xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-b from-header-start to-header-end h-[51px] w-[428px] flex justify-between px-[10px]">
+      <!-- menu item -->
+      <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+        <div class="h-[30px] w-[30px] bg-white rounded-full">
+        </div>
+        <div class="text-xs leading-[12px] mt-[1px] text-white">
+          ประวัติ
+        </div>
+      </div>
+      <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+        <div class="h-[30px] w-[30px] bg-white rounded-full">
+        </div>
+        <div class="text-xs leading-[12px] mt-[1px] text-white">
+          กติกา
+        </div>
+      </div>
+      <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+        <div class="h-[30px] w-[30px] bg-white rounded-full">
+        </div>
+        <div class="text-xs leading-[12px] mt-[1px] text-white">
+          หน้าหลัก
+        </div>
+      </div>
+      <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+        <div class="h-[30px] w-[30px] bg-white rounded-full">
+        </div>
+        <div class="text-xs leading-[12px] mt-[1px] text-white">
+          ผลการชก
+        </div>
+      </div>
+      <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+        <div class="h-[30px] w-[30px] bg-white rounded-full">
+        </div>
+        <div class="text-xs leading-[12px] mt-[1px] text-white">
+          ตั้งค่า
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+    const reder = () => {
+      console.log("🚀 ~ file: game_mobile.html:392 ~ reder ~ window.screen.height:", window.screen.height)
+      const defaultWidth = 428
+      const defaultHeight = 760
+      const scalY = window.innerHeight / defaultHeight
+      console.log("🚀 ~ file: game_mobile.html:357 ~ reder ~ defaultHeight:", defaultHeight)
+      console.log("🚀 ~ file: game_mobile.html:358 ~ reder ~ window.innerHeight:", window.innerHeight)
+      const scalX = window.innerWidth / defaultWidth
+      const mainbody = document.getElementById("mainbody")
+      
+      const multiple = defaultHeight/defaultWidth
+      
+      const currentHeight = window.innerHeight
+      const currentWidth = window.innerWidth
+      
+      const contentWidth = currentHeight / multiple
+      const contentHeight = currentWidth * multiple
+      const differentWidth = (currentWidth - contentWidth)
+      const differentHeight = (currentHeight - contentHeight)
+      
+      if(differentWidth > 0){
+        mainbody.style.scale = scalY
+        mainbody.style.marginLeft = `${differentWidth/2}px`
+        mainbody.style.marginTop = `0px`
+        mainbody.style.transformOrigin = 'top left'
+      }else{
+        mainbody.style.scale = scalX
+        mainbody.style.marginLeft = `0px`
+        mainbody.style.marginTop = `${differentHeight/2}px`
+        mainbody.style.transformOrigin = 'top left'
+      }
+
+      // document.getElementById("div_width").innerHTML = contentWidth
+      // document.getElementById("div_windowwidth").innerHTML = currentWidth
+      // document.getElementById("div_different").innerHTML = differentWidth
+      // document.getElementById("div_windowHeight").innerHTML = currentHeight
+    }
+
+    const setup = async () => {
+      let timer
+      reder()
+      window.addEventListener("resize", async () => {
+        if(timer) clearTimeout(timer)
+        timer = setTimeout(async () => {
+          reder()
+          console.log("resize");
+        }, 1000);
+      })
+    }
+    setup()
+  </script>
 </body>
 </html>
