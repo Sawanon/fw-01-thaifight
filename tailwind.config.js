@@ -59,6 +59,9 @@ module.exports = {
         "fighter-title": "#C34434",
         "container-content": "#222b38",
         "on-container-content": "#222b38",
+        "thead-start": "#5b1e20",
+        "thead-end": "#1d0a0b",
+        "table": "#181e28"
       },
       boxShadow: {
         'button': '0px 4px',
