@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAKYOK</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-prompt bg-black overflow-hidden">
+  <div id="mainbody" class="h-[760px] w-[428px] relative bg-[url(/public/jpg/background.jpg)] bg-cover">
+    <!-- header -->
+    <div class="bg-gradient-to-b from-header-start to-header-end h-[113px] w-[428px]">
+      <div class="flex gap-1 p-1">
+        <div class="bg-black rounded p-1 w-[134px] h-[62px] flex gap-1 items-center">
+          <div class="w-[42px] h-[42px] bg-white rounded-full"></div>
+          <div>
+            <div class="text-xs font-semibold text-white">
+              Fotz5
+            </div>
+            <div class="mt-1 transition cursor-pointer hover:scale-105 flex justify-center items-center gap-1 h-[25px] w-[80px] bg-gradient-to-b from-refresh-start to-refresh-end shadow-button shadow-refresh-shadown rounded">
+              <div class="w-[15px] h-[15px] bg-white rounded-full"></div>
+              <div class="text-xs">ตั้งค่า</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex gap-1">
+            <div class="flex justify-between items-center w-[168px] h-[32px] bg-black rounded">
+              <div class="text-white flex items-center gap-[2px] font-semibold py-1 pl-2">
+                <div class="text-base leading-4">30,400.09</div>
+                <div class="text-xs">THB</div>
+              </div>
+              <div class="mr-[2px] my-[1.5px] rounded cursor-pointer flex items-center justify-center w-[26px] h-[24px] bg-gradient-to-b active:bg-gradient-to-t from-refresh-start to-refresh-end shadow-button-sm shadow-refresh-shadown">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58001 4 4.01001 7.58 4.01001 12C4.01001 16.42 7.58001 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69001 18 6.00001 15.31 6.00001 12C6.00001 8.69 8.69001 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-[110px] h-[32px] bg-black rounded px-[6px] py-[3px]">
+              <div class="w-[23px] h-[23px] rounded-full bg-amber-300"></div>
+              <div class="flex items-center gap-[6px]">
+                <div class="text-white font-semibold text-sm">3</div>
+                <div class="w-[23px] h-[23px] rounded-full bg-blue-300"></div>
+              </div>
+            </div>
+          </div>
+          <div class="px-1 w-[282px] h-[26px] bg-black mt-1 rounded overflow-hidden flex items-center justify-around">
+            <div>
+              <div class="h-4 w-4 bg-white rounded-full"></div>
+            </div>
+            <div class="flex-1 animate-marquee text-white text-nowrap text-xs">
+              เรียนสมาชิกที่เดิมพันมวยไทย ศึกวันไฟต์ไนท์
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-1">
+        <div onclick="gotoMuayPakyok()" class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-muaystep-start to-btn-muaystep-end">
+          มวยพักยก
+        </div>
+        <div class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-event-start to-btn-event-end">
+          กิจกรรม
+        </div>
+        <div class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-reward-start to-btn-reward-end">
+          รางวัล
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="overflow-y-auto relative rounded-lg h-[548px] w-[412px] m-2 bg-container-content bg-opacity-70">
+      <table class="w-full ">
+        <colgroup>
+          <col style="width: 60%" />
+          <col style="width: 20%" />
+          <col style="width: 20%" />
+        </colgroup>
+        <thead class="z-10 sticky top-0 text-header-text bg-gradient-to-b from-thead-start to-thead-end">
+          <tr class="h-[33px] text-sm">
+            <th class="font-medium">คู่ชก</th>
+            <th class="font-medium">มุมแดง</th>
+            <th class="font-medium">มุมน้ำเงิน</th>
+          </tr>
+        </thead>
+        <tbody class="text-xs">
+          <tr>
+            <td
+              colspan="3"
+              class="h-9 text-center text-white bg-table"
+            >
+              มวยไทย - ศึก RWS(ช่องเวิร์คพอยท์) วันเสาร์ที 7 กันยายน 2567
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tbody class="text-xs">
+          <tr>
+            <td
+              colspan="3"
+              class="h-9 text-center text-white bg-table"
+            >
+              มวยไทย - ศึก RWS(ช่องเวิร์คพอยท์) วันเสาร์ที 7 กันยายน 2567
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+          <!---->
+          <tr
+            class="h-[38px] odd:bg-white even:bg-row hover:bg-row-hover text-center"
+          >
+            <td>
+              <div>21:15</div>
+              <div>ก่อนชก</div>
+              <p class="text-red">ตะเภาแก้ว สิงห์มาวิน</p>
+              <p class="text-blue">แสนพล ส.สมหมาย</p>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                  <p class="text-sm">1.08</p>
+              </div>
+            </td>
+            <td class="relative">
+              <div onclick="clickBet(this)" id="bet_btn" class="absolute inset-0 hover:bg-bet-hover cursor-pointer flex items-center justify-center">
+                <p class="text-sm">2.78</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- menu -->
+    <div class="h-[83px] flex flex-col justify-end">
+      <div class="bg-gradient-to-b from-header-start to-header-end h-[52px] w-[428px] flex justify-between px-[10px]">
+        <!-- menu item -->
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ประวัติ
+          </div>
+        </div>
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            กติกา
+          </div>
+        </div>
+        <div class="w-[66px] h-[51px] relative">
+          <div class="z-20 bg-black h-[83px] w-[70px] rounded-t-full -top-[31px] absolute flex flex-col justify-center items-center">
+            <div class="h-[46px] w-[46px] bg-white rounded-full">
+            </div>
+            <div class="text-xs leading-[12px] mt-2 text-white">
+              หน้าหลัก
+            </div>
+          </div>
+        </div>
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ผลการชก
+          </div>
+        </div>
+        <div onclick="showSetting()" class="cursor-pointer h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ตั้งค่า
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- setting dialog -->
+    <div id="setting" class="flex hidden justify-between rounded-t-lg bg-setting h-[77px] w-[428px] absolute bottom-[52px] z-10">
+      <div class="flex gap-4 items-center px-2">
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+      </div>
+      <div class="flex items-center gap-8 px-4">
+        <div class="h-7 w-7 rounded-full bg-white"></div>
+        <div class="h-7 w-7 rounded-full bg-white"></div>
+        <div onclick="showPreset()" class="cursor-pointer h-7 w-7 rounded-full bg-white flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 13.75C9.5 14.72 10.25 15.5 11.17 15.5H13.05C13.85 15.5 14.5 14.82 14.5 13.97C14.5 13.06 14.1 12.73 13.51 12.52L10.5 11.47C9.91 11.26 9.51001 10.94 9.51001 10.02C9.51001 9.17999 10.16 8.48999 10.96 8.48999H12.84C13.76 8.48999 14.51 9.26999 14.51 10.24" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 7.5V16.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6V2H18" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 7L22 2" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </div>
+      </div>
+    </div>
+    <!-- dialog -->
+    <div id="preset" class="bg-preset hidden space-y-1 rounded p-2 absolute bottom-[129px] right-0 z-20 h-[184px]">
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <div class="bg-amber-400 h-full w-full rounded"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            มือใหม่
+          </div>
+          <div class="text-white text-xs">
+            10, 50, 100, 500, 1000
+          </div>
+        </div>
+      </div>
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            ผู้เล่นทั่วไป
+          </div>
+          <div class="text-white text-xs">
+            100, 300, 500, 1,000, 2,000
+          </div>
+        </div>
+      </div>
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            เซียนมวย
+          </div>
+          <div class="text-white text-xs">
+            1,000, 2,000, 5,000, 10,000, 20,000
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bill cart -->
+    <div onclick="toggleBillDialog()" id="billCart" class="hidden absolute cursor-pointer bottom-[60px] left-2 z-20 w-[52px] h-[60px] rounded flex flex-col justify-end">
+      <div class="rounded relative h-[52px] w-[52px] bg-billcart border-2 border-billcart-border flex items-center flex-col justify-end">
+        <div class="text-white text-[10px] h-5 w-5 bg-billtick border-2 border-billtick-border absolute rounded-full -top-2 -right-2 flex justify-center items-center">
+          2
+        </div>
+        <div class="rounded bg-blue-400 absolute -top-2 w-[22px] h-[40px]">
+        </div>
+        <div class="text-[10px] text-white">
+          บิลสเต็ป
+        </div>
+      </div>
+    </div>
+    <!-- bill dialog -->
+    <div id="billDialog" class="hidden absolute inset-0 bg-black bg-opacity-40 z-20">
+      <div class="absolute rounded-[10px] overflow-hidden top-10 bottom-10 left-2 right-2">
+        <div
+          class="h-full flex-1 flex flex-col overflow-hidden bg-gray-800"
+        >
+          <div
+            class="h-[40px] text-base bg-gradient-to-b from-thead-start to-thead-end text-white flex items-center justify-center"
+          >
+            รายการเดิมพันมวยสเต็ป
+            <div onclick="toggleBillDialog()" class="absolute right-[6px] top-[6px] bg-remove-bill border-2 border-remove-bill-border hover:bg-red-400 cursor-pointer w-7 h-7 flex items-center justify-center font-bold text-white rounded-lg">
+              X
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col p-2">
+            <!-- <div id="bill_list" class="bg-white bg-opacity-[0.05] flex-1 rounded flex flex-col justify-center items-stretch"> -->
+            <div id="bill_list" class="bg-white space-y-2 bg-opacity-0 flex-1 rounded flex flex-col">
+              <!-- <div class="text-base text-text-bill-list text-center">
+                ไม่พบรายการเดิมพัน
+              </div> -->
+              <!-- <div class="bg-white bg-opacity-[0.05] flex items-end p-[6px] rounded">
+                <div class="flex-1">
+                  <div>
+                    <span class="text-[red] text-base">
+                      ชาโด้ @1.54
+                    </span>
+                    <span class="ml-1 text-white">@1.54</span>
+                  </div>
+                  <div class="space-x-1 text-sm text-figter-name">
+                    <span>
+                      ชาโด้
+                    </span>
+                    <span>
+                      VS
+                    </span>
+                    <span>
+                      โมฮัมเหม็ด
+                    </span>
+                  </div>
+                </div>
+                <div onclick="clearBill()" class="bg-remove-bill border-2 border-remove-bill-border hover:bg-red-400 cursor-pointer w-7 h-7 flex items-center justify-center font-bold text-white rounded-lg">
+                  X
+                </div>
+              </div> -->
+            </div>
+            <div class="flex text-white justify-between text-xs mt-2">
+              <div>ราคา</div>
+              <div>@0.0000 MY</div>
+            </div>
+            <div class="flex text-white justify-between text-xs">
+              <div>จำนวนเงินได้</div>
+              <div class="text-income">0.00</div>
+            </div>
+            <div class="flex text-white justify-between text-xs">
+              <div>จำนวนเงินเสีย</div>
+              <div class="text-outcome">0.00</div>
+            </div>
+            <div
+              class="mt-2 border text-white border-input-border rounded-lg flex items-center justify-between h-[36px]"
+            >
+              <input
+                class="outline-none text-xs pl-2 w-[calc(100%-40px)] bg-transparent placeholder:text-xs"
+                placeholder="กรอกจำนวนเงินเดิมพัน"
+                type="text"
+              />
+              <div class="text-xs px-2">THB</div>
+            </div>
+            <div class="text-white text-xs flex justify-between mt-2">
+              <div>ขั้นต่ำ - สูงสุด</div>
+              <div>-</div>
+            </div>
+            <div
+              class="hover:scale-105 transition cursor-pointer h-10 text-bet-text rounded font-medium flex items-center justify-center mt-2 mb-1 bg-gradient-to-b from-refresh-start to-refresh-end shadow-button shadow-refresh-shadown"
+            >
+              เดิมพัน
+            </div>
+            <div
+              onclick="clearBill()"
+              class="hover:scale-105 transition cursor-pointer mt-2 text-cancel-all-text mb-1 h-10 rounded font-medium flex items-center justify-center bg-gradient-to-b from-btn-back-start to-btn-back-end shadow-button shadow-btn-back-shadow"
+            >
+              ยกเลิกทั้งหมด
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const showSetting = () => {
+      const setting = document.getElementById("setting")
+      setting.classList.toggle("hidden")
+    }
+    const toggleBillDialog = () => {
+      const billDialog = document.getElementById("billDialog")
+      billDialog.classList.toggle("hidden")
+    }
+    const showPreset = () => {
+      const preset = document.getElementById("preset")
+      preset.classList.toggle("hidden")
+    }
+    const reder = () => {
+      const defaultWidth = 428
+      const defaultHeight = 760
+      const scalY = window.innerHeight / defaultHeight
+      const scalX = window.innerWidth / defaultWidth
+      const mainbody = document.getElementById("mainbody")
+      
+      const multiple = defaultHeight/defaultWidth
+      
+      const currentHeight = window.innerHeight
+      const currentWidth = window.innerWidth
+      
+      const contentWidth = currentHeight / multiple
+      const contentHeight = currentWidth * multiple
+      const differentWidth = (currentWidth - contentWidth)
+      const differentHeight = (currentHeight - contentHeight)
+      
+      if(differentWidth > 0){
+        mainbody.style.scale = scalY
+        mainbody.style.marginLeft = `${differentWidth/2}px`
+        mainbody.style.marginTop = `0px`
+        mainbody.style.transformOrigin = 'top left'
+      }else{
+        mainbody.style.scale = scalX
+        mainbody.style.marginLeft = `0px`
+        mainbody.style.marginTop = `${differentHeight/2}px`
+        mainbody.style.transformOrigin = 'top left'
+      }
+
+      // document.getElementById("div_width").innerHTML = contentWidth
+      // document.getElementById("div_windowwidth").innerHTML = currentWidth
+      // document.getElementById("div_different").innerHTML = differentWidth
+      // document.getElementById("div_windowHeight").innerHTML = currentHeight
+    }
+    const clickBet = () => {
+      const billCart = document.getElementById("billCart")
+      billCart.classList.toggle("hidden")
+      const billList = document.getElementById("bill_list")
+      billList.className = `bg-white space-y-2 bg-opacity-0 flex-1 rounded flex flex-col`
+      billList.innerHTML = ""
+      const div = document.createElement("div")
+      div.innerHTML = `<div class="bg-white bg-opacity-[0.05] flex items-end p-[6px] rounded">
+                <div class="flex-1">
+                  <div>
+                    <span class="text-[red] text-base">
+                      ชาโด้ @1.54
+                    </span>
+                    <span class="ml-1 text-white">@1.54</span>
+                  </div>
+                  <div class="space-x-1 text-sm text-figter-name">
+                    <span>
+                      ชาโด้
+                    </span>
+                    <span>
+                      VS
+                    </span>
+                    <span>
+                      โมฮัมเหม็ด
+                    </span>
+                  </div>
+                </div>
+                <div onclick="clearBill()" class="bg-remove-bill border-2 border-remove-bill-border hover:bg-red-400 cursor-pointer w-7 h-7 flex items-center justify-center font-bold text-white rounded-lg">
+                  X
+                </div>
+              </div>`
+      // bill_list
+      billList.appendChild(div)
+    }
+    const clearBill = () => {
+      const bill_container = document.getElementById("bill_list")
+      bill_container.className = `bg-white bg-opacity-[0.05] flex-1 rounded flex flex-col justify-center items-stretch`
+      bill_container.innerHTML = `<div class="text-base text-text-bill-list text-center">
+                ไม่พบรายการเดิมพัน
+              </div>`
+    }
+    const setup = async () => {
+      let timer
+      reder()
+      window.addEventListener("resize", async () => {
+        if(timer) clearTimeout(timer)
+        timer = setTimeout(async () => {
+          reder()
+          console.log("resize");
+        }, 1000);
+      })
+    }
+    const gotoMuayPakyok = () => {
+      window.location.href = "http://localhost:5500/src/game_mobile_fighter.html"
+    }
+    setup()
+  </script>
+</body>
+</html>

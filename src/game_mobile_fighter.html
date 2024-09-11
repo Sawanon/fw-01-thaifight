@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAKYOK</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-prompt bg-black overflow-hidden">
+  <div id="mainbody" class="h-[760px] w-[428px] relative bg-[url(/public/jpg/background.jpg)] bg-cover">
+    <!-- header -->
+    <div class="bg-gradient-to-b from-header-start to-header-end h-[113px] w-[428px]">
+      <div class="flex gap-1 p-1">
+        <div class="bg-black rounded p-1 w-[134px] h-[62px] flex gap-1 items-center">
+          <div class="w-[42px] h-[42px] bg-white rounded-full"></div>
+          <div>
+            <div class="text-xs font-semibold text-white">
+              Fotz5
+            </div>
+            <div class="mt-1 transition cursor-pointer hover:scale-105 flex justify-center items-center gap-1 h-[25px] w-[80px] bg-gradient-to-b from-refresh-start to-refresh-end shadow-button shadow-refresh-shadown rounded">
+              <div class="w-[15px] h-[15px] bg-white rounded-full"></div>
+              <div class="text-xs">ตั้งค่า</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex gap-1">
+            <div class="flex justify-between items-center w-[168px] h-[32px] bg-black rounded">
+              <div class="text-white flex items-center gap-[2px] font-semibold py-1 pl-2">
+                <div class="text-base leading-4">30,400.09</div>
+                <div class="text-xs">THB</div>
+              </div>
+              <div class="mr-[2px] my-[1.5px] rounded cursor-pointer flex items-center justify-center w-[26px] h-[24px] bg-gradient-to-b active:bg-gradient-to-t from-refresh-start to-refresh-end shadow-button-sm shadow-refresh-shadown">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58001 4 4.01001 7.58 4.01001 12C4.01001 16.42 7.58001 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69001 18 6.00001 15.31 6.00001 12C6.00001 8.69 8.69001 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-[110px] h-[32px] bg-black rounded px-[6px] py-[3px]">
+              <div class="w-[23px] h-[23px] rounded-full bg-amber-300"></div>
+              <div class="flex items-center gap-[6px]">
+                <div class="text-white font-semibold text-sm">3</div>
+                <div class="w-[23px] h-[23px] rounded-full bg-blue-300"></div>
+              </div>
+            </div>
+          </div>
+          <div class="px-1 w-[282px] h-[26px] bg-black mt-1 rounded overflow-hidden flex items-center justify-around">
+            <div>
+              <div class="h-4 w-4 bg-white rounded-full"></div>
+            </div>
+            <div class="flex-1 animate-marquee text-white text-nowrap text-xs">
+              เรียนสมาชิกที่เดิมพันมวยไทย ศึกวันไฟต์ไนท์
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-1">
+        <div onclick="gotoMuayStep()" class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-muaystep-start to-btn-muaystep-end">
+          มวยสเต็ป
+        </div>
+        <div class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-event-start to-btn-event-end">
+          กิจกรรม
+        </div>
+        <div class="cursor-pointer rounded flex flex-1 items-center justify-center text-white text-base h-10 bg-gradient-to-b from-btn-reward-start to-btn-reward-end">
+          รางวัล
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="relative rounded-lg h-[548px] w-[412px] m-2 bg-container-content bg-opacity-70">
+      <div class="absolute z-20 top-2 right-2 bg-on-container-content bg-opacity-70 flex gap-2 items-center p-2 rounded-full">
+        <div class="w-[24px] h-[24px]">
+          <input type="checkbox">
+        </div>
+        <div class="text-white text-sm">
+          Live สด
+        </div>
+      </div>
+      <div class="absolute inset-2 overflow-y-auto overflow-x-hidden">
+        <!-- title -->
+        <div class="h-10 rounded-2xl bg-gradient-to-r from-fighter-title px-4 flex items-center flex-1">
+          <div class="h-7 w-7 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.5192 0.0185369C27.2091 0.0518626 26.9193 0.18889 26.6968 0.407413L18 9.10109L13.4571 4.55774C13.3262 4.42698 13.1708 4.32327 12.9997 4.25254C12.8287 4.18181 12.6454 4.14544 12.4604 4.1455C12.2753 4.14556 12.092 4.18206 11.9211 4.25291C11.7501 4.32376 11.5948 4.42758 11.4639 4.55843C11.1997 4.82269 11.0513 5.18104 11.0515 5.55464C11.0515 5.73962 11.0881 5.92278 11.1589 6.09366C11.2298 6.26454 11.3337 6.4198 11.4646 6.55056L16.0089 11.0898H4.15385C3.05218 11.0898 1.99563 11.5272 1.21663 12.3058C0.437636 13.0844 0 14.1404 0 15.2415L0 31.8483C0 32.9494 0.437636 34.0054 1.21663 34.784C1.99563 35.5626 3.05218 36 4.15385 36H31.8462C32.9478 36 34.0044 35.5626 34.7834 34.784C35.5624 34.0054 36 32.9494 36 31.8483V15.2415C36 14.1404 35.5624 13.0844 34.7834 12.3058C34.0044 11.5272 32.9478 11.0898 31.8462 11.0898H19.9897L28.6878 2.39746C28.9057 2.195 29.0526 1.92777 29.1067 1.63535C29.1607 1.34294 29.1191 1.0409 28.988 0.773981C28.8569 0.507058 28.6432 0.289446 28.3787 0.15338C28.1141 0.0173141 27.8128 -0.0299682 27.5192 0.0185369ZM14.5385 13.8576C24.8469 13.8576 26.3077 13.8866 26.3077 23.5449C26.3077 33.2045 24.7458 33.2322 14.5385 33.2322C4.284 33.2322 2.76923 33.1298 2.76923 23.5449C2.76923 13.9627 4.284 13.8576 14.5385 13.8576ZM31.1538 17.9235C32.3529 17.9235 33.318 18.8867 33.318 20.0851C33.318 21.2836 32.3529 22.2482 31.1538 22.2482C30.8694 22.2489 30.5877 22.1934 30.3248 22.085C30.0619 21.9766 29.823 21.8173 29.6219 21.6162C29.4208 21.4152 29.2614 21.1765 29.1529 20.9137C29.0444 20.651 28.989 20.3694 28.9897 20.0851C28.9897 18.8867 29.9548 17.9221 31.1538 17.9221V17.9235ZM31.1538 23.4591C32.3529 23.4591 33.318 24.4223 33.318 25.6207C33.318 26.8192 32.3529 27.7838 31.1538 27.7838C30.8694 27.7845 30.5877 27.7291 30.3248 27.6206C30.0619 27.5122 29.823 27.3529 29.6219 27.1519C29.4208 26.9509 29.2614 26.7121 29.1529 26.4494C29.0444 26.1866 28.989 25.905 28.9897 25.6207C28.9897 24.4223 29.9548 23.4577 31.1538 23.4577V23.4591Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="text-base text-white ml-4">
+            ศึก - มวยไทยดาวรุ่ง WSS
+          </div>
+        </div>
+        <!-- per pair fighter -->
+        <div class="mt-2 w-[396px] p-[2px] rounded-2xl" style="background: linear-gradient(-72deg,#ffde45,#fff 16%,#ffde45 21%,#fff 24%,#ffde45 27%,#ffde45 36%,#fff 45%,#fff 60%,#ffde45 72%,#fff 80%,#ffde45 84%,#ffde45);">
+          <!-- title per pair -->
+          <div class="rounded-tl-2xl rounded-tr-2xl overflow-hidden bg-gradient-to-r from-fighter-title-start to-fighter-title-end relative h-[42px] flex items-center justify-between before:left-[20px] before:skew-x-[-17deg] before:shadow-md before:bg-black before:h-[42px] before:w-[35px] before:absolute">
+            <div class="bg-black z-10 w-[40px] h-[42px] flex items-center">
+              <svg class="ml-4" width="22" height="22" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.46 66.3001L62.3337 65.5489C62.3403 65.396 62.3282 65.2429 62.2977 65.0929C62.2977 65.0929 59.4153 63.4214 56.0398 64.1245C52.6642 64.8277 49.3607 66.7969 47.1803 66.0937C46.7015 65.9389 46.0992 65.5693 45.3828 65.0989C48.2279 64.2037 51.4655 63.8042 52.3126 62.297C53.5786 60.047 56.4262 59.8874 56.4262 59.8874C56.4262 59.6642 56.3926 59.477 56.341 59.3102L58.6041 58.8986C58.7241 58.877 58.7889 58.6502 58.7445 58.3946C58.7025 58.1391 58.5705 57.9519 58.4493 57.9747L55.7062 58.4846C55.2874 58.2243 54.8446 58.1955 54.8446 58.1955C51.3131 57.9687 52.1722 62.0162 47.5319 62.0162C45.7032 62.0162 44.5704 62.8514 43.3476 63.7586C41.5152 62.591 39.1921 61.3238 36.3493 60.7346C42.27 58.9538 49.7987 57.6387 55.357 54.3615C68.8735 46.3949 76.6758 34.3507 68.9335 20.6661C61.2021 6.9888 39.1501 -12.1004 30.4611 10.3259C26.8035 19.7662 23.5528 25.7613 21.0916 29.9984C22.732 26.6732 24.922 21.4653 26.0655 15.4678C13.0362 22.0365 13.3842 34.7887 14.205 40.2198C13.9503 40.3089 13.7048 40.4222 13.4718 40.5582L2.59517 46.9661C-1.00836 49.09 -0.837967 56.2911 2.97436 63.0338C5.99591 68.3737 10.3878 71.8224 13.8786 71.9796L13.863 72C13.9326 72 13.9986 71.9928 14.0682 71.9916C14.1678 71.9928 14.2638 71.9856 14.361 71.9808C19.2377 71.784 22.6816 68.8033 25.6311 68.4517C29.4375 67.9993 38.5873 70.1808 41.7912 66.9793C41.9767 66.796 42.1765 66.6279 42.3888 66.4765C44.3796 67.9441 46.3836 68.9413 49.1831 67.9969C53.437 66.5605 57.3742 65.4709 61.8741 66.8605C61.8741 66.8605 61.9941 66.7033 62.1105 66.4537L64.1312 67.1773C64.2464 67.2193 64.412 67.0549 64.5044 66.8137C64.5932 66.5701 64.574 66.3421 64.46 66.3001ZM44.0736 4.74124C47.6483 2.63408 59.2281 11.1959 64.4492 20.4298C69.6739 29.666 61.4001 31.4635 56.1754 22.2273C50.9555 12.9959 38.1865 8.21517 44.0736 4.74124ZM14.5241 68.0701C12.0726 69.5184 7.83547 66.7129 5.06232 61.805C2.28558 56.8935 2.02638 51.7444 4.47673 50.296C6.93069 48.8548 11.1666 51.6628 13.9446 56.5683C16.7177 61.4726 16.9781 66.6253 14.5241 68.0701ZM20.5876 66.9793C21.0052 63.4238 19.9792 58.8986 17.4977 54.5043C15.0689 50.2084 11.7006 46.9409 8.41026 45.4973L14.3298 42.0102C14.7621 41.7627 15.2537 41.6378 15.7517 41.649C18.2885 41.649 22.4296 44.4329 25.4367 49.7536C29.0259 56.1051 28.8399 62.1134 26.4267 63.533L20.5876 66.9793ZM34.1714 65.6629C31.5194 65.1301 28.8975 65.1565 26.5059 65.4505L30.5499 63.0662C31.2718 62.6505 32.0215 62.2852 32.7938 61.973C34.6778 62.1554 37.2829 62.6606 39.1873 64.0177C39.7693 64.4341 40.3237 64.8697 40.8649 65.2981C39.3481 65.9689 37.3357 66.3001 34.1714 65.6629Z" fill="white"/>
+              </svg>                
+            </div>
+            <div class="text-white ml-2">ศึกมวยไทยเกียติเพชร</div>
+            <div class="w-[70px] flex items-center justify-center relative before:bg-gradient-to-b before:from-live-start before:to-live-end before:h-[42px] before:absolute before:right-7 before:-skew-x-[18deg] before:w-[60px] after:bg-gradient-to-b after:from-live-start after:to-live-end after:rounded-tr-2xl after:h-[42px] after:absolute after:right-0 after:w-[50px]">
+              <p class="z-10 text-white mr-4">
+                LIVE
+              </p>
+            </div>
+          </div>
+          <!-- fighter -->
+          <div class="bg-red-800 flex text-white items-center p-2 relative overflow-hidden h-[72px]">
+            <div class="absolute -inset-10 flex skew-x-[-18deg]">
+              <div class="bg-gradient-to-b from-vs-red-start to-vs-red-end flex-1"></div>
+              <div class="bg-gradient-to-b from-vs-blue-start to-vs-blue-end flex-1"></div>
+            </div>
+            <div class="z-10 flex gap-2 items-center flex-1">
+              <img class="h-10 w-auto overflow-hidden rounded-[50%]" data-v-fcedb6b0 src="/public/jpg/bk.jpg" alt="">
+              <div>
+                <p class="text-base leading-4">บัวขาว</p>
+                <p class="text-xs leading-3 mt-1">บัญชาเมฆ</p>
+              </div>
+            </div>
+            <div class="text-2xl z-10">VS</div>
+            <div class="z-10 flex gap-2 items-center flex-1 justify-end">
+              <div>
+                <p class="text-base leading-4">แสนชัย</p>
+                <p class="text-xs leading-3 mt-1">พี.เค</p>
+              </div>
+              <img class="h-10 w-auto overflow-hidden rounded-[50%]" data-v-fcedb6b0 src="/public/jpg/sc.jpg" alt="">
+            </div>
+          </div>
+          <!-- main sup -->
+          <div class="relative before:bg-gradient-to-r before:from-transparent before:via-[hsla(0,0%,71%,0.7)] before:to-transparent before:h-[1px] before:w-full before:absolute before:left-0 before:z-10
+          after:bg-gradient-to-r after:from-transparent after:via-[hsla(0,0%,71%,0.7)] after:to-transparent after:h-[1px] after:w-full after:absolute after:left-0 after:z-10">
+            <div class="flex h-8 text-white bg-gradient-to-r from-main-red from-25% via-black via-50% to-main-blue to-75%">
+              <div class="flex-1 flex items-center justify-center">
+                รอง 3/2
+              </div>
+              <div class="flex-1 flex items-center justify-center">
+                ต่อ 7/4
+              </div>
+            </div>
+          </div>
+          <!-- footer fighter -->
+          <div class="flex flex-col bg-black h-[132px] relative rounded-bl-2xl rounded-br-2xl overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-tr from-[rgba(255,43,54,0.65)] to-[32%] to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-tl from-[rgba(51,129,255,0.65)] to-[32%] to-transparent"></div>
+            <div class="flex justify-between items-center px-4 pt-2 z-10 relative">
+              <div class="text-white">
+                <div class="text-sm">เวลาเริ่มชก</div>
+                <div class="text-[22px]">16:30 น.</div>
+              </div>
+              <div class="text-xs flex items-center justify-center bg-gradient-to-b from-before-fight-start to-before-fight-end h-[25px] w-[82px] rounded-full">
+                รอบก่อนชก
+              </div>
+            </div>
+            <div class="flex-1 gap-2 z-10 relative flex items-center justify-center px-4">
+              <!-- button enter bet -->
+              <div class="hover:scale-105 transition cursor-pointer flex text-white bg-white h-[52px] w-[204px] rounded-l-[4000px] rounded-r-full relative bg-gradient-to-b from-refresh-start to-refresh-shadown">
+                <div class="absolute inset-[2px] bg-black rounded-l-[4000px] rounded-r-full"></div>
+                <div class="flex items-center justify-center bg-gradient-to-b from-refresh-start to-refresh-end w-[48px] h-[46px] shadow-button shadow-refresh-shadown rounded-[10px] relative">
+                  <!-- grove icon -->
+                  <div class="w-[28px] h-[28px]">
+                    <img class="w-[28px] h-[28px]" style="filter: invert(11%) sepia(96%) saturate(5653%) hue-rotate(99deg) brightness(99%) contrast(94%);" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAzNiA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjk3NzcgMzEuNDU0QzQuMzk5NjkgMjcuMDkyIDEuMTExNjkgMTYuMTgyIDIuMjA3NjkgMTIuOTFDMy4wODM2OSAxMC4yOSA2Ljk1NzY5IDExLjA5IDguNzg1NjkgMTEuODE4QzguNzg1NjkgNC4xODIgMTIuMDczNyAyIDIwLjg0NTcgMkMyOS42MTE3IDIgMzMuOTk5NyA0LjE4IDMzLjk5OTcgMTUuMDlDMzMuOTk5NyAyMy44MTggMzEuODA3NyAyOS42MzYgMzAuNzExNyAzMS40NTRNMTAuOTc3NyAzMS40NTRIMzAuNzExN0gxMC45Nzc3Wk0xMC45Nzc3IDMxLjQ1NFYzOEgzMC43MTE3VjMxLjQ1NEgxMC45Nzc3WiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTguNzg1NjQgMTEuODIyM0M5LjUxNTY0IDEyLjU0NjMgMTEuNjM1NiAxNC4wMDIzIDE0LjI2NTYgMTQuMDAyM0gyNC4xMzM2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNOC43ODU2NCAxMS44MjIzQzguNzg1NjQgMTkuNDU2MyAxMi4wNzM2IDIwLjU0ODMgMTQuMjY1NiAyMC41NDgzIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="">
+                  </div>
+                </div>
+                <div class="text-refresh-start text-xl font-medium relative h-full flex-1 flex items-center justify-center">เข้าแทง</div>
+              </div>
+              <div class="hover:scale-105 transition cursor-pointer flex items-center justify-center w-[58px] h-[48px] mb-1 bg-gradient-to-b from-dashboard-start to-dashboard-end shadow-button shadow-dashboard-shadow rounded-[10px]">
+                <img class="h-[28px] w-[28px]" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyLjUgOUgxOS41QzE5LjEwMjIgOSAxOC43MjA2IDkuMTQwNTQgMTguNDM5MyA5LjM5MDdDMTguMTU4IDkuNjQwODYgMTggOS45ODAxNSAxOCAxMC4zMzM5VjI0Ljk5NjRIMjRWMTAuMzMzOUMyNCA5Ljk4MDE1IDIzLjg0MiA5LjY0MDg2IDIzLjU2MDcgOS4zOTA3QzIzLjI3OTQgOS4xNDA1NCAyMi44OTc4IDkgMjIuNSA5WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTQuNSAxNi45OTY1SDEuNUMxLjEwMjE4IDE2Ljk5NjUgMC43MjA2NDQgMTcuMTM3IDAuNDM5MzQgMTcuMzg3MkMwLjE1ODAzNSAxNy42MzczIDAgMTcuOTc2NiAwIDE4LjMzMDRWMjQuOTg5M0g2VjE4LjMzMDRDNiAxNy45NzY2IDUuODQxOTYgMTcuNjM3MyA1LjU2MDY2IDE3LjM4NzJDNS4yNzkzNiAxNy4xMzcgNC44OTc4MyAxNi45OTY1IDQuNSAxNi45OTY1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEzLjUgMC45OTY0NkgxMC41QzEwLjEwMjIgMC45OTY0NiA5LjcyMDY0IDEuMTM3IDkuNDM5MzQgMS4zODcxNkM5LjE1ODAzIDEuNjM3MzIgOSAxLjk3NjYxIDkgMi4zMzAzOVYyNC45OTY1SDE1VjIuMzMwMzlDMTUgMS45NzY2MSAxNC44NDIgMS42MzczMiAxNC41NjA3IDEuMzg3MTZDMTQuMjc5NCAxLjEzNyAxMy44OTc4IDAuOTk2NDYgMTMuNSAwLjk5NjQ2WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" style="filter: invert(28%) sepia(88%) saturate(1045%) hue-rotate(36deg) brightness(95%) contrast(101%);" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- <div style="background: linear-gradient(25deg,rgba(255,43,54,.65),transparent 32%),linear-gradient(-25deg,rgba(51,129,255,.65),transparent 32%);"></div> -->
+        </div>
+        <!-- per pair fighter -->
+        <div class="mt-2 w-[396px] p-[2px] rounded-2xl" style="background: linear-gradient(-72deg,#ffde45,#fff 16%,#ffde45 21%,#fff 24%,#ffde45 27%,#ffde45 36%,#fff 45%,#fff 60%,#ffde45 72%,#fff 80%,#ffde45 84%,#ffde45);">
+          <!-- title per pair -->
+          <div class="rounded-tl-2xl rounded-tr-2xl overflow-hidden bg-gradient-to-r from-fighter-title-start to-fighter-title-end relative h-[42px] flex items-center justify-between before:left-[20px] before:skew-x-[-17deg] before:shadow-md before:bg-black before:h-[42px] before:w-[35px] before:absolute">
+            <div class="bg-black z-10 w-[40px] h-[42px] flex items-center">
+              <svg class="ml-4" width="22" height="22" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.46 66.3001L62.3337 65.5489C62.3403 65.396 62.3282 65.2429 62.2977 65.0929C62.2977 65.0929 59.4153 63.4214 56.0398 64.1245C52.6642 64.8277 49.3607 66.7969 47.1803 66.0937C46.7015 65.9389 46.0992 65.5693 45.3828 65.0989C48.2279 64.2037 51.4655 63.8042 52.3126 62.297C53.5786 60.047 56.4262 59.8874 56.4262 59.8874C56.4262 59.6642 56.3926 59.477 56.341 59.3102L58.6041 58.8986C58.7241 58.877 58.7889 58.6502 58.7445 58.3946C58.7025 58.1391 58.5705 57.9519 58.4493 57.9747L55.7062 58.4846C55.2874 58.2243 54.8446 58.1955 54.8446 58.1955C51.3131 57.9687 52.1722 62.0162 47.5319 62.0162C45.7032 62.0162 44.5704 62.8514 43.3476 63.7586C41.5152 62.591 39.1921 61.3238 36.3493 60.7346C42.27 58.9538 49.7987 57.6387 55.357 54.3615C68.8735 46.3949 76.6758 34.3507 68.9335 20.6661C61.2021 6.9888 39.1501 -12.1004 30.4611 10.3259C26.8035 19.7662 23.5528 25.7613 21.0916 29.9984C22.732 26.6732 24.922 21.4653 26.0655 15.4678C13.0362 22.0365 13.3842 34.7887 14.205 40.2198C13.9503 40.3089 13.7048 40.4222 13.4718 40.5582L2.59517 46.9661C-1.00836 49.09 -0.837967 56.2911 2.97436 63.0338C5.99591 68.3737 10.3878 71.8224 13.8786 71.9796L13.863 72C13.9326 72 13.9986 71.9928 14.0682 71.9916C14.1678 71.9928 14.2638 71.9856 14.361 71.9808C19.2377 71.784 22.6816 68.8033 25.6311 68.4517C29.4375 67.9993 38.5873 70.1808 41.7912 66.9793C41.9767 66.796 42.1765 66.6279 42.3888 66.4765C44.3796 67.9441 46.3836 68.9413 49.1831 67.9969C53.437 66.5605 57.3742 65.4709 61.8741 66.8605C61.8741 66.8605 61.9941 66.7033 62.1105 66.4537L64.1312 67.1773C64.2464 67.2193 64.412 67.0549 64.5044 66.8137C64.5932 66.5701 64.574 66.3421 64.46 66.3001ZM44.0736 4.74124C47.6483 2.63408 59.2281 11.1959 64.4492 20.4298C69.6739 29.666 61.4001 31.4635 56.1754 22.2273C50.9555 12.9959 38.1865 8.21517 44.0736 4.74124ZM14.5241 68.0701C12.0726 69.5184 7.83547 66.7129 5.06232 61.805C2.28558 56.8935 2.02638 51.7444 4.47673 50.296C6.93069 48.8548 11.1666 51.6628 13.9446 56.5683C16.7177 61.4726 16.9781 66.6253 14.5241 68.0701ZM20.5876 66.9793C21.0052 63.4238 19.9792 58.8986 17.4977 54.5043C15.0689 50.2084 11.7006 46.9409 8.41026 45.4973L14.3298 42.0102C14.7621 41.7627 15.2537 41.6378 15.7517 41.649C18.2885 41.649 22.4296 44.4329 25.4367 49.7536C29.0259 56.1051 28.8399 62.1134 26.4267 63.533L20.5876 66.9793ZM34.1714 65.6629C31.5194 65.1301 28.8975 65.1565 26.5059 65.4505L30.5499 63.0662C31.2718 62.6505 32.0215 62.2852 32.7938 61.973C34.6778 62.1554 37.2829 62.6606 39.1873 64.0177C39.7693 64.4341 40.3237 64.8697 40.8649 65.2981C39.3481 65.9689 37.3357 66.3001 34.1714 65.6629Z" fill="white"/>
+              </svg>                
+            </div>
+            <div class="text-white ml-2">ศึกมวยไทยเกียติเพชร</div>
+            <div class="w-[70px] flex items-center justify-center relative before:bg-gradient-to-b before:from-live-start before:to-live-end before:h-[42px] before:absolute before:right-7 before:-skew-x-[18deg] before:w-[60px] after:bg-gradient-to-b after:from-live-start after:to-live-end after:rounded-tr-2xl after:h-[42px] after:absolute after:right-0 after:w-[50px]">
+              <p class="z-10 text-white mr-4">
+                LIVE
+              </p>
+            </div>
+          </div>
+          <!-- fighter -->
+          <div class="bg-red-800 flex text-white items-center p-2 relative overflow-hidden h-[72px]">
+            <div class="absolute -inset-10 flex skew-x-[-18deg]">
+              <div class="bg-gradient-to-b from-vs-red-start to-vs-red-end flex-1"></div>
+              <div class="bg-gradient-to-b from-vs-blue-start to-vs-blue-end flex-1"></div>
+            </div>
+            <div class="z-10 flex gap-2 items-center flex-1">
+              <img class="h-10 w-auto overflow-hidden rounded-[50%]" data-v-fcedb6b0 src="/public/jpg/bk.jpg" alt="">
+              <div>
+                <p class="text-base leading-4">บัวขาว</p>
+                <p class="text-xs leading-3 mt-1">บัญชาเมฆ</p>
+              </div>
+            </div>
+            <div class="text-2xl z-10">VS</div>
+            <div class="z-10 flex gap-2 items-center flex-1 justify-end">
+              <div>
+                <p class="text-base leading-4">แสนชัย</p>
+                <p class="text-xs leading-3 mt-1">พี.เค</p>
+              </div>
+              <img class="h-10 w-auto overflow-hidden rounded-[50%]" data-v-fcedb6b0 src="/public/jpg/sc.jpg" alt="">
+            </div>
+          </div>
+          <!-- main sup -->
+          <div class="relative before:bg-gradient-to-r before:from-transparent before:via-[hsla(0,0%,71%,0.7)] before:to-transparent before:h-[1px] before:w-full before:absolute before:left-0 before:z-10
+          after:bg-gradient-to-r after:from-transparent after:via-[hsla(0,0%,71%,0.7)] after:to-transparent after:h-[1px] after:w-full after:absolute after:left-0 after:z-10">
+            <div class="flex h-8 text-white bg-gradient-to-r from-main-red from-25% via-black via-50% to-main-blue to-75%">
+              <div class="flex-1 flex items-center justify-center">
+                รอง 3/2
+              </div>
+              <div class="flex-1 flex items-center justify-center">
+                ต่อ 7/4
+              </div>
+            </div>
+          </div>
+          <!-- footer fighter -->
+          <div class="flex flex-col bg-black h-[132px] relative rounded-bl-2xl rounded-br-2xl overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-tr from-[rgba(255,43,54,0.65)] to-[32%] to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-tl from-[rgba(51,129,255,0.65)] to-[32%] to-transparent"></div>
+            <div class="flex justify-between items-center px-4 pt-2 z-10 relative">
+              <div class="text-white">
+                <div class="text-sm">เวลาเริ่มชก</div>
+                <div class="text-[22px]">16:30 น.</div>
+              </div>
+              <div class="text-xs flex items-center justify-center bg-gradient-to-b from-before-fight-start to-before-fight-end h-[25px] w-[82px] rounded-full">
+                รอบก่อนชก
+              </div>
+            </div>
+            <div class="flex-1 gap-2 z-10 relative flex items-center justify-center px-4">
+              <!-- button enter bet -->
+              <div class="hover:scale-105 transition cursor-pointer flex text-white bg-white h-[52px] w-[204px] rounded-l-[4000px] rounded-r-full relative bg-gradient-to-b from-refresh-start to-refresh-shadown">
+                <div class="absolute inset-[2px] bg-black rounded-l-[4000px] rounded-r-full"></div>
+                <div class="flex items-center justify-center bg-gradient-to-b from-refresh-start to-refresh-end w-[48px] h-[46px] shadow-button shadow-refresh-shadown rounded-[10px] relative">
+                  <!-- grove icon -->
+                  <div class="w-[28px] h-[28px]">
+                    <img class="w-[28px] h-[28px]" style="filter: invert(11%) sepia(96%) saturate(5653%) hue-rotate(99deg) brightness(99%) contrast(94%);" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAzNiA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjk3NzcgMzEuNDU0QzQuMzk5NjkgMjcuMDkyIDEuMTExNjkgMTYuMTgyIDIuMjA3NjkgMTIuOTFDMy4wODM2OSAxMC4yOSA2Ljk1NzY5IDExLjA5IDguNzg1NjkgMTEuODE4QzguNzg1NjkgNC4xODIgMTIuMDczNyAyIDIwLjg0NTcgMkMyOS42MTE3IDIgMzMuOTk5NyA0LjE4IDMzLjk5OTcgMTUuMDlDMzMuOTk5NyAyMy44MTggMzEuODA3NyAyOS42MzYgMzAuNzExNyAzMS40NTRNMTAuOTc3NyAzMS40NTRIMzAuNzExN0gxMC45Nzc3Wk0xMC45Nzc3IDMxLjQ1NFYzOEgzMC43MTE3VjMxLjQ1NEgxMC45Nzc3WiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTguNzg1NjQgMTEuODIyM0M5LjUxNTY0IDEyLjU0NjMgMTEuNjM1NiAxNC4wMDIzIDE0LjI2NTYgMTQuMDAyM0gyNC4xMzM2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNOC43ODU2NCAxMS44MjIzQzguNzg1NjQgMTkuNDU2MyAxMi4wNzM2IDIwLjU0ODMgMTQuMjY1NiAyMC41NDgzIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="">
+                  </div>
+                </div>
+                <div class="text-refresh-start text-xl font-medium relative h-full flex-1 flex items-center justify-center">เข้าแทง</div>
+              </div>
+              <div class="hover:scale-105 transition cursor-pointer flex items-center justify-center w-[58px] h-[48px] mb-1 bg-gradient-to-b from-dashboard-start to-dashboard-end shadow-button shadow-dashboard-shadow rounded-[10px]">
+                <img class="h-[28px] w-[28px]" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyLjUgOUgxOS41QzE5LjEwMjIgOSAxOC43MjA2IDkuMTQwNTQgMTguNDM5MyA5LjM5MDdDMTguMTU4IDkuNjQwODYgMTggOS45ODAxNSAxOCAxMC4zMzM5VjI0Ljk5NjRIMjRWMTAuMzMzOUMyNCA5Ljk4MDE1IDIzLjg0MiA5LjY0MDg2IDIzLjU2MDcgOS4zOTA3QzIzLjI3OTQgOS4xNDA1NCAyMi44OTc4IDkgMjIuNSA5WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTQuNSAxNi45OTY1SDEuNUMxLjEwMjE4IDE2Ljk5NjUgMC43MjA2NDQgMTcuMTM3IDAuNDM5MzQgMTcuMzg3MkMwLjE1ODAzNSAxNy42MzczIDAgMTcuOTc2NiAwIDE4LjMzMDRWMjQuOTg5M0g2VjE4LjMzMDRDNiAxNy45NzY2IDUuODQxOTYgMTcuNjM3MyA1LjU2MDY2IDE3LjM4NzJDNS4yNzkzNiAxNy4xMzcgNC44OTc4MyAxNi45OTY1IDQuNSAxNi45OTY1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEzLjUgMC45OTY0NkgxMC41QzEwLjEwMjIgMC45OTY0NiA5LjcyMDY0IDEuMTM3IDkuNDM5MzQgMS4zODcxNkM5LjE1ODAzIDEuNjM3MzIgOSAxLjk3NjYxIDkgMi4zMzAzOVYyNC45OTY1SDE1VjIuMzMwMzlDMTUgMS45NzY2MSAxNC44NDIgMS42MzczMiAxNC41NjA3IDEuMzg3MTZDMTQuMjc5NCAxLjEzNyAxMy44OTc4IDAuOTk2NDYgMTMuNSAwLjk5NjQ2WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" style="filter: invert(28%) sepia(88%) saturate(1045%) hue-rotate(36deg) brightness(95%) contrast(101%);" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- <div style="background: linear-gradient(25deg,rgba(255,43,54,.65),transparent 32%),linear-gradient(-25deg,rgba(51,129,255,.65),transparent 32%);"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="h-[83px] flex flex-col justify-end">
+      <div class="bg-gradient-to-b from-header-start to-header-end h-[52px] w-[428px] flex justify-between px-[10px]">
+        <!-- menu item -->
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ประวัติ
+          </div>
+        </div>
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            กติกา
+          </div>
+        </div>
+        <div class="w-[66px] h-[51px] relative">
+          <div class="z-20 bg-black h-[83px] w-[70px] rounded-t-full -top-[31px] absolute flex flex-col justify-center items-center">
+            <div class="h-[46px] w-[46px] bg-white rounded-full">
+            </div>
+            <div class="text-xs leading-[12px] mt-2 text-white">
+              หน้าหลัก
+            </div>
+          </div>
+        </div>
+        <div class="h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ผลการชก
+          </div>
+        </div>
+        <div onclick="showSetting()" class="cursor-pointer h-[51px] w-[66px] flex flex-col justify-center items-center">
+          <div class="h-[30px] w-[30px] bg-white rounded-full">
+          </div>
+          <div class="text-xs leading-[12px] mt-[1px] text-white">
+            ตั้งค่า
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- setting dialog -->
+    <div id="setting" class="flex hidden justify-between rounded-t-lg bg-setting h-[77px] w-[428px] absolute bottom-[52px] z-10">
+      <div class="flex gap-4 items-center px-2">
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+        <div class="h-[26px] w-[26px] rounded-full bg-white"></div>
+      </div>
+      <div class="flex items-center gap-8 px-4">
+        <div class="h-7 w-7 rounded-full bg-white"></div>
+        <div class="h-7 w-7 rounded-full bg-white"></div>
+        <div onclick="showPreset()" class="cursor-pointer h-7 w-7 rounded-full bg-white flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 13.75C9.5 14.72 10.25 15.5 11.17 15.5H13.05C13.85 15.5 14.5 14.82 14.5 13.97C14.5 13.06 14.1 12.73 13.51 12.52L10.5 11.47C9.91 11.26 9.51001 10.94 9.51001 10.02C9.51001 9.17999 10.16 8.48999 10.96 8.48999H12.84C13.76 8.48999 14.51 9.26999 14.51 10.24" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 7.5V16.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6V2H18" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 7L22 2" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </div>
+      </div>
+    </div>
+    <!-- dialog -->
+    <div id="preset" class="bg-preset hidden space-y-1 rounded p-2 absolute bottom-[129px] right-0 z-20 h-[184px]">
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <div class="bg-amber-400 h-full w-full rounded"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            มือใหม่
+          </div>
+          <div class="text-white text-xs">
+            10, 50, 100, 500, 1000
+          </div>
+        </div>
+      </div>
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            ผู้เล่นทั่วไป
+          </div>
+          <div class="text-white text-xs">
+            100, 300, 500, 1,000, 2,000
+          </div>
+        </div>
+      </div>
+      <div class="border border-amber-500 p-2 rounded-md flex items-center bg-preset-container">
+        <div class="px-4">
+          <div class="w-4 h-4 rounded bg-checkbox-preset p-[2px]">
+            <!-- TODO: when active -->
+            <!-- <div class="bg-amber-400 h-full w-full rounded"></div> -->
+          </div>
+        </div>
+        <div>
+          <div class="text-amber-400 text-sm">
+            เซียนมวย
+          </div>
+          <div class="text-white text-xs">
+            1,000, 2,000, 5,000, 10,000, 20,000
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const showSetting = () => {
+      const setting = document.getElementById("setting")
+      setting.classList.toggle("hidden")
+    }
+    
+    const showPreset = () => {
+      const preset = document.getElementById("preset")
+      preset.classList.toggle("hidden")
+    }
+    const reder = () => {
+      const defaultWidth = 428
+      const defaultHeight = 760
+      const scalY = window.innerHeight / defaultHeight
+      const scalX = window.innerWidth / defaultWidth
+      const mainbody = document.getElementById("mainbody")
+      
+      const multiple = defaultHeight/defaultWidth
+      
+      const currentHeight = window.innerHeight
+      const currentWidth = window.innerWidth
+      
+      const contentWidth = currentHeight / multiple
+      const contentHeight = currentWidth * multiple
+      const differentWidth = (currentWidth - contentWidth)
+      const differentHeight = (currentHeight - contentHeight)
+      
+      if(differentWidth > 0){
+        mainbody.style.scale = scalY
+        mainbody.style.marginLeft = `${differentWidth/2}px`
+        mainbody.style.marginTop = `0px`
+        mainbody.style.transformOrigin = 'top left'
+      }else{
+        mainbody.style.scale = scalX
+        mainbody.style.marginLeft = `0px`
+        mainbody.style.marginTop = `${differentHeight/2}px`
+        mainbody.style.transformOrigin = 'top left'
+      }
+
+      // document.getElementById("div_width").innerHTML = contentWidth
+      // document.getElementById("div_windowwidth").innerHTML = currentWidth
+      // document.getElementById("div_different").innerHTML = differentWidth
+      // document.getElementById("div_windowHeight").innerHTML = currentHeight
+    }
+
+    const setup = async () => {
+      let timer
+      reder()
+      window.addEventListener("resize", async () => {
+        if(timer) clearTimeout(timer)
+        timer = setTimeout(async () => {
+          reder()
+          console.log("resize");
+        }, 1000);
+      })
+    }
+    const gotoMuayStep = () => {
+      window.location = "http://localhost:5500/src/game_mobile_muaystep.html"
+    }
+    setup()
+  </script>
+</body>
+</html>
